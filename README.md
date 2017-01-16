@@ -13,9 +13,7 @@ The BGL2015 Visualizer application is a graphical interface for a biobehavioral 
 The neural network model comes from the field of behavior analysis, and is intended to faithfully follow the general principles of operation of the brain, and produce behaviors that adhere to the principles of behavior analysis.
 
 # Run Prebuilt App
-Note that you will be downloading the application from GitHub, not the Apple Store. Because of this your MacOS will choke without the extra security steps listed below.
-
-*If enough people want it to act like a normal app (which I seriously doubt will happen), I will submit the app to the App Store.*
+I missed a step in distributing the app. Because of this your MacOS will choke without the extra security steps listed below.  ***I will fix this security snafu Real Soon Now.***
 
 ## System Requirements
 * MacOS 11.0 or later
@@ -29,6 +27,7 @@ Note that you will be downloading the application from GitHub, not the Apple Sto
 6. Open the MacOS System Preferences, click "Security & Privacy".
 7. You will see: "BGL2015 Visualizer" was blocked from opening because it is not from an identified developer. Click the "Open Anyway" button. 
 8. If and when there are new releases and you download them, you will have to go through this approval process again.
+
 
 
 
