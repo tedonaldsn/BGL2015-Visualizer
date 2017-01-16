@@ -1,0 +1,275 @@
+<!--
+ State machine: BGL2015SessionStateMachine
+ 
+ Implements algorithm for one session for one "subject" in
+ 
+ Burgos, José E., García-Leal, Óscar (2015). Autoshaped
+ choice in artificial neural networks: Implications for behavioral
+ economics and neuroeconomics. Behavioural Processes, 114, 63-71
+ -->
+
+<statemachine id="BGL2015SessionStateMachine" initial="session" >
+    
+    <datamodel id="neuralnet_components_and_settings" >
+        
+        <let id="BGL2015"
+            data_type="Object->BASelectionistNeuralNetwork.BurgosGarciaLeal2015"
+            expression="BASelectionistNeuralNetwork.BurgosGarciaLeal2015('SelNet_1')" />
+            
+        <let id="X_stimulus"
+            data_type = "Object->BASelectionistNeuralNetwork.BinarySensor"
+            expression="BGL2015->findBinarySensor('X')" />
+            
+        <let id="Y_stimulus"
+            data_type = "Object->BASelectionistNeuralNetwork.BinarySensor"
+            expression="BGL2015->findBinarySensor('Y')" />
+            
+        <let id="Sr_stimulus"
+            data_type = "Object->BASelectionistNeuralNetwork.BinarySensor"
+            expression="BGL2015->findBinarySensor('Sr')" />
+        
+        <let id="sensoryInput_1"
+            data_type="Object->BASelectionistNeuralNetwork.SensoryInputNeuron"
+            expression="BGL2015->findSensoryInputNeuron('S_Prime_1')" />
+            
+        <let id="sensoryInput_2"
+            data_type="Object->BASelectionistNeuralNetwork.SensoryInputNeuron"
+            expression="BGL2015->findSensoryInputNeuron('S_Prime_2')" />
+            
+        <let id="motorOutput_1"
+            data_type="Object->BASelectionistNeuralNetwork.MotorOutputNeuron"
+            expression="BGL2015->findMotorOutputNeuron('M_Prime_1')" />
+            
+        <let id="motorOutput_2"
+            data_type="Object->BASelectionistNeuralNetwork.MotorOutputNeuron"
+            expression="BGL2015->findMotorOutputNeuron('M_Prime_2')" />
+        
+        <let id="r1_response"
+            data_type="Object->BASelectionistNeuralNetwork.BinaryEffector"
+            expression="BGL2015->findBinaryEffector('r1')" />
+            
+        <let id="r2_response"
+            data_type="Object->BASelectionistNeuralNetwork.BinaryEffector"
+            expression="BGL2015->findBinaryEffector('r2')" />
+        
+        <let id="nonSrTimeStepsPerTrial" data_type="Integer" expression="4" />
+        <let id="srTimeStepsPerTrial" data_type="Integer" expression="1" />
+        
+        <let id="maxXTrials" data_type="Integer" expression="200" />
+        <let id="maxYTrials" data_type="Integer" expression="200" />
+        <let id="maxTrainingTrials" data_type="Integer" expression="maxXTrials + maxYTrials" />
+        <let id="maxChoiceTrials" data_type="Integer" expression="20" />
+        <let id="maxTotalTrials" data_type="Integer" expression="maxTrainingTrials + maxChoiceTrials" />
+
+        <let id="withProbability_0_05" data_type="Boolean" expression="Random.boolean(0.50)" />
+
+        <var id="isXTrial" data_type="Boolean" expression="false" />
+        <var id="isYTrial" data_type="Boolean" expression="false" />
+        <var id="isSrTrial" data_type="Boolean" expression="false" />
+    </datamodel>
+    
+    <onentry>
+        <assign destination="BGL2015->isLearningEnabled" expression="true" />
+    </onentry>
+    
+    
+    <parallel id="session">
+        
+        <!--
+         State "trial_setup" sets parameters for each trial.
+         
+         Must be entered before the "update_stepper" state because update_stepper
+         uses parameters set by trial_setup (hence the ordering in this XML
+         document).
+         -->
+        <compound id="trial_setup" initial="training" >
+            
+            <compound id="training" initial="setup_training_trial" >
+                <datamodel>
+                    <var id="xTrialsRemaining" data_type="Integer" expression="maxXTrials" />
+                    <var id="yTrialsRemaining" data_type="Integer" expression="maxYTrials" />
+                </datamodel>
+                
+                
+                <onentry>
+                    <log label="Start of Training Trials" expression="&quot;---------- Start of Training Trials ---------- Start of Training Trials ----------&quot;" />
+                </onentry>
+                
+                <atomic id="setup_training_trial" >
+                    
+                    <transition condition="(xTrialsRemaining &gt; 0) &amp;&amp; (withProbability_0_05 || (yTrialsRemaining == 0))" target="await_end_of_training_trial" >
+                        
+                        <log label="xTrialsRemaining" expression="xTrialsRemaining" />
+                        
+                        <assign destination="xTrialsRemaining" expression="xTrialsRemaining - 1" />
+                        <assign destination="isXTrial" expression="true" />
+                        <assign destination="isYTrial" expression="false" />
+                        <assign destination="isSrTrial" expression="withProbability_0_05" />
+                    </transition>
+                    
+                    <transition condition="yTrialsRemaining &gt; 0" target="await_end_of_training_trial" >
+                        
+                        <log label="yTrialsRemaining" expression="yTrialsRemaining" />
+                        
+                        <assign destination="yTrialsRemaining" expression="yTrialsRemaining - 1" />
+                        <assign destination="isXTrial" expression="false" />
+                        <assign destination="isYTrial" expression="true" />
+                        <assign destination="isSrTrial" expression="true" />
+                    </transition>
+                </atomic>
+                
+                <atomic id="await_end_of_training_trial" >
+                    <transition event="endOfTrial" condition="(xTrialsRemaining &gt; 0) || (yTrialsRemaining &gt; 0)" target="setup_training_trial" />
+                    <transition event="endOfTrial" condition="(xTrialsRemaining == 0) &amp;&amp; (yTrialsRemaining == 0)" target="setup_choice_trials" />
+                </atomic>
+            </compound>
+            
+            
+            <atomic id="setup_choice_trials" >
+                <datamodel>
+                    <var id="choiceTrialsRemaining" data_type="Integer" expression="maxChoiceTrials" />
+                </datamodel>
+                
+                <onentry>
+                    <log label="Start of Choice Trials" expression="&quot;---------- Start of Choice Trials ---------- Start of Choice Trials ----------&quot;" />
+                    <assign destination="BGL2015->isLearningEnabled" expression="false" />
+                    <assign destination="isXTrial" expression="true" />
+                    <assign destination="isYTrial" expression="true" />
+                    <assign destination="isSrTrial" expression="false" />
+                </onentry>
+                
+                <transition event="endOfTrial" condition="choiceTrialsRemaining &gt; 0" >
+                    <assign destination="choiceTrialsRemaining" expression="choiceTrialsRemaining - 1" />
+                </transition>
+            </atomic>
+            
+            <!--
+             End of trial_setup
+             -->
+        </compound>
+        
+        
+        <!--
+         update_stepper administers time steps using settings provided by 
+         trial_setup. Each time step is either an update of the neural network,
+         or an intertrial interval during which activation levels are reset to
+         their minimum value.
+         
+         Phases of a trial are:
+         
+         (a) intertrial interval if this is not the first trial
+         
+         (b) four time steps during which the Sr cannot be on (i.e., non_sr_updates).
+         
+         © one time step that is the same as the four preceding, except that 
+            the Sr might be on (depending on trial_setup).
+         -->
+        <compound id="update_stepper" initial="non_sr_updates" >
+            <datamodel>
+                <var id="trialsRemaining" data_type="Integer" />
+            </datamodel>
+            
+            <onentry>
+                <assign destination="trialsRemaining" expression="maxTotalTrials" />
+            </onentry>
+            
+            <transition condition="trialsRemaining == 0" target="end_BGL2015SessionStateMachine" />
+            
+            <atomic id="inter_trial_interval" >
+                <onentry>
+                    <assign destination="X_stimulus->isOn" expression="false" />
+                    <assign destination="Y_stimulus->isOn" expression="false" />
+                    <assign destination="Sr_stimulus->isOn" expression="false" />
+                </onentry>
+                
+                <transition event="timeStep" target="non_sr_updates" >
+                    <effect expression="BGL2015->interTrialInterval()" />
+                </transition>
+            </atomic>
+            
+            <atomic id="non_sr_updates" >
+                <datamodel>
+                    <var id="stepsRemaining" data_type="Integer" />
+                </datamodel>
+                
+                <onentry>
+                    <assign destination="stepsRemaining" expression="nonSrTimeStepsPerTrial" />
+                    <assign destination="X_stimulus->isOn" expression="isXTrial" />
+                    <assign destination="Y_stimulus->isOn" expression="isYTrial" />
+                    <assign destination="Sr_stimulus->isOn" expression="false" />
+                </onentry>
+                
+                <transition event="timeStep" condition="stepsRemaining &gt; 0" >
+                    <assign destination="stepsRemaining" expression="stepsRemaining - 1" />
+                    <effect expression="BGL2015->update()" />
+                </transition>
+                
+                <transition condition="stepsRemaining == 0" target="sr_updates" />
+            </atomic>
+            
+            <atomic id="sr_updates" >
+                <datamodel>
+                    <var id="stepsRemaining" data_type="Integer" />
+                </datamodel>
+                
+                <onentry>
+                    <assign destination="stepsRemaining" expression="srTimeStepsPerTrial" />
+                    <assign destination="X_stimulus->isOn" expression="isXTrial" />
+                    <assign destination="Y_stimulus->isOn" expression="isYTrial" />
+                    <assign destination="Sr_stimulus->isOn" expression="isSrTrial" />
+                </onentry>
+                
+                <transition event="timeStep" condition="stepsRemaining &gt; 0" >
+                    <assign destination="stepsRemaining" expression="stepsRemaining - 1" />
+                    <effect expression="BGL2015->update()" />
+                </transition>
+                
+                <transition condition="stepsRemaining == 0" target="end_of_trial_logger" />
+            </atomic>
+            
+            <atomic id="end_of_trial_logger" >
+                <datamodel>
+                    <var id="trialNumber" data_type="Integer" />
+                    <var id="hippocampalSignal" data_type="Real" />
+                    <var id="dopaminergicSignal" data_type="Real" />
+                    <var id="mo1Activation" data_type="Real" />
+                    <var id="mo1weight" data_type="Real" />
+                    <var id="mo2Activation" data_type="Real" />
+                    <var id="mo2weight" data_type="Real" />
+                </datamodel>
+                
+                <onentry>
+                    <assign destination="trialsRemaining" expression="trialsRemaining - 1" />
+                    <assign destination="trialNumber" expression="maxTotalTrials - trialsRemaining" />
+                    <assign destination="hippocampalSignal" expression="BGL2015->hippocampalSignal" />
+                    <assign destination="dopaminergicSignal" expression="BGL2015->dopaminergicSignal" />
+                    <assign destination="mo1Activation" expression="motorOutput_1->activationLevel" />
+                    <assign destination="mo1weight" expression="motorOutput_1->excitatoryWeights->getAt(0)" />
+                    <assign destination="mo2Activation" expression="motorOutput_2->activationLevel" />
+                    <assign destination="mo2weight" expression="motorOutput_2->excitatoryWeights->getAt(0)" />
+                    
+                    <log label="End of Trial" expression=
+                    "&quot;\(trialNumber), X: \(isXTrial), Y: \(isYTrial), Sr: \(isSrTrial), H: \(hippocampalSignal), D: \(dopaminergicSignal), M'1 w: \(mo1weight), a: \(mo1Activation), M'2 w: \(mo2weight), a: \(mo2Activation)&quot;" />
+                </onentry>
+                
+                <transition target="inter_trial_interval" >
+                    <raise event="endOfTrial" />
+                </transition>
+            </atomic>
+            
+            <!--
+             End of update_stepper
+             -->
+        </compound>
+        
+        <!--
+         End of session
+         -->
+    </parallel>
+    
+    
+    <final id="end_BGL2015SessionStateMachine" />
+    
+</statemachine>
+
+

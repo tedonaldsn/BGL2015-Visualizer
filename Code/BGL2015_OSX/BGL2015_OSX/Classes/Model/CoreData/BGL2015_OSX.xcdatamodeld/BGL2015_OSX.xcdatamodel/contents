@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G31" minimumToolsVersion="Xcode 7.0">
+    <entity name="Session" representedClassName=".Session" syncable="YES">
+        <attribute name="duration" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="mPrime1Activation" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mPrime2Activation" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="r1Count" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="r2Count" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="smPrimePrime1Weight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="smPrimePrime2Weight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="startedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="steps" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Step" inverseName="session" inverseEntity="Step" syncable="YES"/>
+    </entity>
+    <entity name="Step" representedClassName=".Step" syncable="YES">
+        <attribute name="isLearning" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isSrOn" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isXOn" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isYOn" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="m1outActivation" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="m2outActivation" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="networkState" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="s1m1Weight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="s2m2Weight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="trialNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="trialStepNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="session" maxCount="1" deletionRule="Deny" destinationEntity="Session" inverseName="steps" inverseEntity="Session" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Session" positionX="-63" positionY="171" width="128" height="195"/>
+        <element name="Step" positionX="-398" positionY="-54" width="128" height="225"/>
+    </elements>
+</model>

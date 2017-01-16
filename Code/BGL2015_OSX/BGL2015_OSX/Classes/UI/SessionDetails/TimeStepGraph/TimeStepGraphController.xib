@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TimeStepGraphController" customModule="BGL2015_OSX" customModuleProvider="target">
+            <connections>
+                <outlet property="srBarPlotHostingView" destination="dLm-19-Xzb" id="dCx-EX-2QP"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="weightsActivationsLinePlotHostingView" destination="1DY-ev-ikS" id="qJO-iX-Rib"/>
+                <outlet property="xStimulusBarPlotHostingView" destination="6BT-Fp-gtT" id="8gl-LA-1B6"/>
+                <outlet property="yStimulusBarPlotHostingView" destination="s1q-Ji-upj" id="GIs-E1-uOl"/>
+                <outlet property="zoomSlider" destination="1l5-Bn-yhV" id="ea0-f0-FoF"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="1240" height="306"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="6BT-Fp-gtT" userLabel="X Stimulus Bar Plot Hosting View" customClass="CPTGraphHostingView">
+                    <rect key="frame" x="0.0" y="276" width="1240" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="d4Q-RF-qEg"/>
+                    </constraints>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="s1q-Ji-upj" userLabel="Y Stimulus Bar Plot Hosting View" customClass="CPTGraphHostingView">
+                    <rect key="frame" x="0.0" y="249" width="1240" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="quz-ah-RB0"/>
+                    </constraints>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="dLm-19-Xzb" userLabel="Sr Bar Plot Hosting View" customClass="CPTGraphHostingView">
+                    <rect key="frame" x="0.0" y="223" width="1240" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="gtF-69-JXq"/>
+                    </constraints>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="1DY-ev-ikS" userLabel="Weights Activations Line Plot Hosting View" customClass="CPTGraphHostingView">
+                    <rect key="frame" x="0.0" y="32" width="1240" height="194"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="194" id="ZDD-vA-ty0"/>
+                    </constraints>
+                </customView>
+                <button toolTip="Show/hide the on-graph legend" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jcD-QL-CbS">
+                    <rect key="frame" x="-6" y="-2" width="81" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="7w0-cA-aZS"/>
+                        <constraint firstAttribute="width" constant="69" id="GPY-5g-glT"/>
+                    </constraints>
+                    <buttonCell key="cell" type="push" title="Legend" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="l5D-nN-BrJ">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="toggleLegendAction:" target="-2" id="3HR-IT-eea"/>
+                    </connections>
+                </button>
+                <button toolTip="Set playback range to current graph view and scroll level." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MFz-ot-dWR">
+                    <rect key="frame" x="1127" y="-2" width="119" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="107" id="QuV-aW-iZx"/>
+                        <constraint firstAttribute="height" constant="21" id="ql7-sT-gdG"/>
+                    </constraints>
+                    <buttonCell key="cell" type="push" title="Set Playback" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2QU-kQ-eBx">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="setPlaybackRangeAction:" target="-2" id="zUm-bX-cdP"/>
+                    </connections>
+                </button>
+                <slider toolTip="Slide right to zoom into the graph, left to zoom out." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1l5-Bn-yhV">
+                    <rect key="frame" x="75" y="5" width="1052" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="Zko-D6-E39"/>
+                    </constraints>
+                    <sliderCell key="cell" continuous="YES" alignment="left" maxValue="100" doubleValue="33.845744099650346" tickMarkPosition="above" sliderType="linear" id="4ef-KX-Ssi"/>
+                    <connections>
+                        <action selector="zoomAction:" target="-2" id="eP2-cC-RLN"/>
+                    </connections>
+                </slider>
+            </subviews>
+            <constraints>
+                <constraint firstItem="dLm-19-Xzb" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="53" id="3X2-bE-Yr1"/>
+                <constraint firstAttribute="bottom" secondItem="MFz-ot-dWR" secondAttribute="bottom" constant="5" id="6L1-pS-v8W"/>
+                <constraint firstItem="1DY-ev-ikS" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="Gda-7b-bpE"/>
+                <constraint firstItem="1DY-ev-ikS" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="80" id="IFf-uT-CwU"/>
+                <constraint firstItem="jcD-QL-CbS" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="280" id="R5C-xJ-osW"/>
+                <constraint firstItem="6BT-Fp-gtT" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="SWF-Xc-htf"/>
+                <constraint firstItem="s1q-Ji-upj" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="27" id="SwO-rx-Esb"/>
+                <constraint firstAttribute="trailing" secondItem="dLm-19-Xzb" secondAttribute="trailing" id="TDo-pd-ZR7"/>
+                <constraint firstItem="6BT-Fp-gtT" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="TgX-c5-jng"/>
+                <constraint firstItem="1l5-Bn-yhV" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="77" id="WxK-AW-j1U"/>
+                <constraint firstAttribute="trailing" secondItem="s1q-Ji-upj" secondAttribute="trailing" id="c8O-Nh-Pkl"/>
+                <constraint firstItem="1l5-Bn-yhV" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="283" id="eJi-W3-ovK"/>
+                <constraint firstAttribute="trailing" secondItem="6BT-Fp-gtT" secondAttribute="trailing" id="gCv-Zi-hWc"/>
+                <constraint firstItem="jcD-QL-CbS" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="hC6-83-jUY"/>
+                <constraint firstAttribute="trailing" secondItem="MFz-ot-dWR" secondAttribute="trailing" id="i5a-jE-4nM"/>
+                <constraint firstItem="dLm-19-Xzb" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="pfb-oY-mIG"/>
+                <constraint firstItem="s1q-Ji-upj" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="qwT-RB-2GJ"/>
+                <constraint firstAttribute="trailing" secondItem="1l5-Bn-yhV" secondAttribute="trailing" constant="115" id="xzA-Ht-YMt"/>
+                <constraint firstAttribute="trailing" secondItem="1DY-ev-ikS" secondAttribute="trailing" id="zfW-f1-3O7"/>
+            </constraints>
+            <point key="canvasLocation" x="536" y="659"/>
+        </customView>
+    </objects>
+</document>

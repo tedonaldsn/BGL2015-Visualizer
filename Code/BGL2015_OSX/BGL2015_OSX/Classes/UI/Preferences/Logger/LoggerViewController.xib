@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LoggerViewController" customModule="BGL2015_OSX" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY" customClass="LoggerView" customModule="BGL2015_OSX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="107" height="215"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button toolTip="Turn logging on/off without changing type of events logged" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1yr-wC-JNU">
+                    <rect key="frame" x="18" y="179" width="71" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Logging" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="1F2-B1-Lzv">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="isLoggingAction:" target="Hz6-mo-xeY" id="dhe-7S-jSG"/>
+                    </connections>
+                </button>
+                <button toolTip="Log informational data output" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j4l-PV-Tth">
+                    <rect key="frame" x="18" y="119" width="45" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Info" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="7Ii-ti-aBJ">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="isInfoAction:" target="Hz6-mo-xeY" id="PRh-zz-fMj"/>
+                    </connections>
+                </button>
+                <button toolTip="Log errors that stop the application" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dUO-bW-ibY">
+                    <rect key="frame" x="18" y="139" width="52" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Error" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="CEh-F8-gCL">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="isErrorAction:" target="Hz6-mo-xeY" id="Kk9-6b-zeX"/>
+                    </connections>
+                </button>
+                <button toolTip="Log execution of selected segments of code" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NV0-ej-2wL">
+                    <rect key="frame" x="18" y="79" width="56" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Trace" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="24M-A2-VOs">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="isTraceAction:" target="Hz6-mo-xeY" id="VQM-Sk-RZq"/>
+                    </connections>
+                </button>
+                <button toolTip="Log potential problems" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qP4-ZY-G6H">
+                    <rect key="frame" x="18" y="99" width="54" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Warn" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="3QO-Zz-jlo">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="isWarnAction:" target="Hz6-mo-xeY" id="NEJ-Hz-V5W"/>
+                    </connections>
+                </button>
+                <button toolTip="Spew debugging information at selected points (should be none)" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mE0-cH-WB0">
+                    <rect key="frame" x="18" y="59" width="62" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Debug" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="3iE-Wb-rRF">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="isDebugAction:" target="Hz6-mo-xeY" id="aNz-0y-JSz"/>
+                    </connections>
+                </button>
+                <button toolTip="Reset logging to defaults: logging on, and error logging enabled" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CSx-d5-wL0">
+                    <rect key="frame" x="14" y="13" width="70" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Reset" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YFP-xq-GHu">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="resetAction:" target="Hz6-mo-xeY" id="5cR-gQ-cF1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <connections>
+                <outlet property="isDebugButton" destination="mE0-cH-WB0" id="eNb-HU-dJH"/>
+                <outlet property="isErrorButton" destination="dUO-bW-ibY" id="I7T-aM-UaY"/>
+                <outlet property="isInfoButton" destination="j4l-PV-Tth" id="aGI-o7-c8V"/>
+                <outlet property="isLoggingButton" destination="1yr-wC-JNU" id="589-8T-RhY"/>
+                <outlet property="isTraceButton" destination="NV0-ej-2wL" id="lQq-nS-VHb"/>
+                <outlet property="isWarnButton" destination="qP4-ZY-G6H" id="gjc-Ll-tAz"/>
+                <outlet property="resetButton" destination="CSx-d5-wL0" id="AlB-rj-SxY"/>
+            </connections>
+            <point key="canvasLocation" x="220.5" y="377.5"/>
+        </customView>
+    </objects>
+</document>

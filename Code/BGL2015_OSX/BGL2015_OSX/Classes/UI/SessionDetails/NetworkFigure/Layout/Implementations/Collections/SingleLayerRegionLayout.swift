@@ -1,0 +1,146 @@
+//
+//  SingleLayerRegionLayout.swift
+//  BGL2015_OSX
+//
+//  Created by Tom Donaldson on 11/21/16.
+//  Copyright © 2016 Tom Donaldson. All rights reserved.
+//
+
+import Cocoa
+import BASimulationFoundation
+import BASelectionistNeuralNetwork
+
+
+
+open class SingleLayerRegionLayout: BaseCollectionLayout {
+    
+    // MARK: Data
+    
+    public unowned let rootLayout: NeuralNetworkLayout
+    
+    public var region: NeuralRegion {
+        return node as! NeuralRegion
+    }
+    
+    
+    // MARK: Initialization
+    
+    public init(rootLayout: NeuralNetworkLayout, regionNode: Node) {
+        
+        assert(regionNode is NeuralRegion)
+        
+        self.rootLayout = rootLayout
+        
+        super.init(node: regionNode, collectionAxis: CollectionAxis.XMajor)
+        
+        priv_populate()
+
+    } // end init
+    
+    
+    
+
+    
+    
+    
+    // MARK: Search
+    
+    open override func find(identifier: Identifier) -> BaseLayout? {
+        //
+        // Find area with the specified identifier
+        //
+        if let layout = super.find(identifier: identifier) {
+            return layout
+        }
+        //
+        // Find symbol with the specified identifier
+        //
+        for layout in layouts {
+            if let collection = layout as? BaseCollectionLayout,
+                let targetLayout = collection.find(identifier: identifier) {
+                return targetLayout
+            }
+        }
+        
+        return nil
+    }
+    
+
+    
+    // MARK: Update
+    
+    open override func isValidNodeForTimestepUpdate(_ nodeState: Node) -> Bool {
+        if let newRegion = nodeState as? NeuralRegion {
+            return newRegion.areaCount == region.areaCount
+                && super.isValidNodeForTimestepUpdate(nodeState)
+        }
+        return false
+    }
+    
+    open override func updateForTimestep(_ nodeState: Node) -> Void {
+        super.updateForTimestep(nodeState)
+        
+        let areas: [NeuralArea] = region.areas
+        var areaIx: Int = 0
+        
+        for layout in layouts {
+            if let nodeLayout = layout as? BaseNodeLayout {
+                let area = areas[areaIx]
+                nodeLayout.updateForTimestep(area)
+                areaIx = areaIx + 1
+            }
+        }
+        
+        assert(areaIx == areas.count)
+
+    } // end updateForTimestep
+    
+    
+    // MARK: Scaling
+    
+    open override func scale(_ scalingFactor: CGFloat) -> Void{
+        super.scale(scalingFactor)
+    }
+    
+    
+    
+    // MARK: Repositioning
+    
+    open override func translate(xBy deltaX: CGFloat, yBy deltaY: CGFloat) -> Void {
+        super.translate(xBy: deltaX, yBy: deltaY)
+    }
+    
+    
+    // MARK: Drawing
+
+    open override func draw() -> Void {
+        super.draw()
+    }
+    
+    
+    
+    // MARK: *Private* Data
+    
+    
+    
+    // MARK: *Private* Methods
+    
+    
+    fileprivate func priv_populate() {
+        
+        let areas: [NeuralArea] = region.areas
+        
+        for area in areas {
+            
+            let layout = SingleLayerAreaLayout(rootLayout: rootLayout, areaNode: area)
+            append(layout: layout)
+        }
+        
+    } // end priv_populate
+    
+    
+    
+    
+    
+} // end class SingleLayerRegionLayout
+

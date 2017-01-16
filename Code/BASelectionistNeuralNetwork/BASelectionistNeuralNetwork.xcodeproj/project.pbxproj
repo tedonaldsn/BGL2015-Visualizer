@@ -1,0 +1,1595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		631D258B1BAF413500073490 /* TestNetworkContainers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631D258A1BAF413500073490 /* TestNetworkContainers.swift */; };
+		631D258C1BAF413500073490 /* TestNetworkContainers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631D258A1BAF413500073490 /* TestNetworkContainers.swift */; };
+		631E2DA01BF129BC009BEF9B /* ComputationalNodeBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D6E1BF129BC009BEF9B /* ComputationalNodeBody.swift */; };
+		631E2DA11BF129BC009BEF9B /* ComputationalNodeBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D6E1BF129BC009BEF9B /* ComputationalNodeBody.swift */; };
+		631E2DA21BF129BC009BEF9B /* ComputationalNodeBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D6E1BF129BC009BEF9B /* ComputationalNodeBody.swift */; };
+		631E2DA31BF129BC009BEF9B /* ComputationalNodeBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D6E1BF129BC009BEF9B /* ComputationalNodeBody.swift */; };
+		631E2DA41BF129BC009BEF9B /* NodeBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D6F1BF129BC009BEF9B /* NodeBody.swift */; };
+		631E2DA51BF129BC009BEF9B /* NodeBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D6F1BF129BC009BEF9B /* NodeBody.swift */; };
+		631E2DA61BF129BC009BEF9B /* NodeBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D6F1BF129BC009BEF9B /* NodeBody.swift */; };
+		631E2DA71BF129BC009BEF9B /* NodeBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D6F1BF129BC009BEF9B /* NodeBody.swift */; };
+		631E2DA81BF129BC009BEF9B /* OperantConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D701BF129BC009BEF9B /* OperantConnections.swift */; };
+		631E2DA91BF129BC009BEF9B /* OperantConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D701BF129BC009BEF9B /* OperantConnections.swift */; };
+		631E2DAA1BF129BC009BEF9B /* OperantConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D701BF129BC009BEF9B /* OperantConnections.swift */; };
+		631E2DAB1BF129BC009BEF9B /* OperantConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D701BF129BC009BEF9B /* OperantConnections.swift */; };
+		631E2DAC1BF129BC009BEF9B /* OperantNeuronBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D711BF129BC009BEF9B /* OperantNeuronBody.swift */; };
+		631E2DAD1BF129BC009BEF9B /* OperantNeuronBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D711BF129BC009BEF9B /* OperantNeuronBody.swift */; };
+		631E2DAE1BF129BC009BEF9B /* OperantNeuronBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D711BF129BC009BEF9B /* OperantNeuronBody.swift */; };
+		631E2DAF1BF129BC009BEF9B /* OperantNeuronBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D711BF129BC009BEF9B /* OperantNeuronBody.swift */; };
+		631E2DB01BF129BC009BEF9B /* RespondentConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D721BF129BC009BEF9B /* RespondentConnections.swift */; };
+		631E2DB11BF129BC009BEF9B /* RespondentConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D721BF129BC009BEF9B /* RespondentConnections.swift */; };
+		631E2DB21BF129BC009BEF9B /* RespondentConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D721BF129BC009BEF9B /* RespondentConnections.swift */; };
+		631E2DB31BF129BC009BEF9B /* RespondentConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D721BF129BC009BEF9B /* RespondentConnections.swift */; };
+		631E2DB41BF129BC009BEF9B /* RespondentNeuronBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D731BF129BC009BEF9B /* RespondentNeuronBody.swift */; };
+		631E2DB51BF129BC009BEF9B /* RespondentNeuronBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D731BF129BC009BEF9B /* RespondentNeuronBody.swift */; };
+		631E2DB61BF129BC009BEF9B /* RespondentNeuronBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D731BF129BC009BEF9B /* RespondentNeuronBody.swift */; };
+		631E2DB71BF129BC009BEF9B /* RespondentNeuronBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D731BF129BC009BEF9B /* RespondentNeuronBody.swift */; };
+		631E2DB81BF129BC009BEF9B /* UnweightedConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D741BF129BC009BEF9B /* UnweightedConnections.swift */; };
+		631E2DB91BF129BC009BEF9B /* UnweightedConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D741BF129BC009BEF9B /* UnweightedConnections.swift */; };
+		631E2DBA1BF129BC009BEF9B /* UnweightedConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D741BF129BC009BEF9B /* UnweightedConnections.swift */; };
+		631E2DBB1BF129BC009BEF9B /* UnweightedConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D741BF129BC009BEF9B /* UnweightedConnections.swift */; };
+		631E2DBC1BF129BC009BEF9B /* WeightedConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D751BF129BC009BEF9B /* WeightedConnections.swift */; };
+		631E2DBD1BF129BC009BEF9B /* WeightedConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D751BF129BC009BEF9B /* WeightedConnections.swift */; };
+		631E2DBE1BF129BC009BEF9B /* WeightedConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D751BF129BC009BEF9B /* WeightedConnections.swift */; };
+		631E2DBF1BF129BC009BEF9B /* WeightedConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D751BF129BC009BEF9B /* WeightedConnections.swift */; };
+		631E2DC01BF129BC009BEF9B /* ActivationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D771BF129BC009BEF9B /* ActivationSettings.swift */; };
+		631E2DC11BF129BC009BEF9B /* ActivationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D771BF129BC009BEF9B /* ActivationSettings.swift */; };
+		631E2DC21BF129BC009BEF9B /* ActivationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D771BF129BC009BEF9B /* ActivationSettings.swift */; };
+		631E2DC31BF129BC009BEF9B /* ActivationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D771BF129BC009BEF9B /* ActivationSettings.swift */; };
+		631E2DC81BF129BC009BEF9B /* LearningSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D791BF129BC009BEF9B /* LearningSettings.swift */; };
+		631E2DC91BF129BC009BEF9B /* LearningSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D791BF129BC009BEF9B /* LearningSettings.swift */; };
+		631E2DCA1BF129BC009BEF9B /* LearningSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D791BF129BC009BEF9B /* LearningSettings.swift */; };
+		631E2DCB1BF129BC009BEF9B /* LearningSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D791BF129BC009BEF9B /* LearningSettings.swift */; };
+		631E2DE01BF129BC009BEF9B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D7F1BF129BC009BEF9B /* Network.swift */; };
+		631E2DE11BF129BC009BEF9B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D7F1BF129BC009BEF9B /* Network.swift */; };
+		631E2DE21BF129BC009BEF9B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D7F1BF129BC009BEF9B /* Network.swift */; };
+		631E2DE31BF129BC009BEF9B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D7F1BF129BC009BEF9B /* Network.swift */; };
+		631E2DE41BF129BC009BEF9B /* ReactivationThreshold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D801BF129BC009BEF9B /* ReactivationThreshold.swift */; };
+		631E2DE51BF129BC009BEF9B /* ReactivationThreshold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D801BF129BC009BEF9B /* ReactivationThreshold.swift */; };
+		631E2DE61BF129BC009BEF9B /* ReactivationThreshold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D801BF129BC009BEF9B /* ReactivationThreshold.swift */; };
+		631E2DE71BF129BC009BEF9B /* ReactivationThreshold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E2D801BF129BC009BEF9B /* ReactivationThreshold.swift */; };
+		6325F0DC1D81C80500D41E6E /* ActivatableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6325F0DB1D81C80500D41E6E /* ActivatableNode.swift */; };
+		6325F0DD1D81C80500D41E6E /* ActivatableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6325F0DB1D81C80500D41E6E /* ActivatableNode.swift */; };
+		6325F0DE1D81C80500D41E6E /* ActivatableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6325F0DB1D81C80500D41E6E /* ActivatableNode.swift */; };
+		6325F0DF1D81C80500D41E6E /* ActivatableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6325F0DB1D81C80500D41E6E /* ActivatableNode.swift */; };
+		6325F0E11D881FEB00D41E6E /* NeuralRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6325F0E01D881FEB00D41E6E /* NeuralRegion.swift */; };
+		6325F0E21D881FEB00D41E6E /* NeuralRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6325F0E01D881FEB00D41E6E /* NeuralRegion.swift */; };
+		6325F0E31D881FEB00D41E6E /* NeuralRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6325F0E01D881FEB00D41E6E /* NeuralRegion.swift */; };
+		6325F0E41D881FEB00D41E6E /* NeuralRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6325F0E01D881FEB00D41E6E /* NeuralRegion.swift */; };
+		6325F0E61D88205F00D41E6E /* NeuralArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6325F0E51D88205F00D41E6E /* NeuralArea.swift */; };
+		6325F0E71D88205F00D41E6E /* NeuralArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6325F0E51D88205F00D41E6E /* NeuralArea.swift */; };
+		6325F0E81D88205F00D41E6E /* NeuralArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6325F0E51D88205F00D41E6E /* NeuralArea.swift */; };
+		6325F0E91D88205F00D41E6E /* NeuralArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6325F0E51D88205F00D41E6E /* NeuralArea.swift */; };
+		6325F0EB1D883F1000D41E6E /* NeuralMultiLayerArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6325F0EA1D883F1000D41E6E /* NeuralMultiLayerArea.swift */; };
+		6325F0EC1D883F1000D41E6E /* NeuralMultiLayerArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6325F0EA1D883F1000D41E6E /* NeuralMultiLayerArea.swift */; };
+		6325F0ED1D883F1000D41E6E /* NeuralMultiLayerArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6325F0EA1D883F1000D41E6E /* NeuralMultiLayerArea.swift */; };
+		6325F0EE1D883F1000D41E6E /* NeuralMultiLayerArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6325F0EA1D883F1000D41E6E /* NeuralMultiLayerArea.swift */; };
+		6325F0F01D88757A00D41E6E /* NeuralSingleLayerArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6325F0EF1D88757A00D41E6E /* NeuralSingleLayerArea.swift */; };
+		6325F0F11D88757A00D41E6E /* NeuralSingleLayerArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6325F0EF1D88757A00D41E6E /* NeuralSingleLayerArea.swift */; };
+		6325F0F21D88757A00D41E6E /* NeuralSingleLayerArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6325F0EF1D88757A00D41E6E /* NeuralSingleLayerArea.swift */; };
+		6325F0F31D88757A00D41E6E /* NeuralSingleLayerArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6325F0EF1D88757A00D41E6E /* NeuralSingleLayerArea.swift */; };
+		633D7FBE1B7CB21A000CBD89 /* BASelectionistNeuralNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 633D7FBD1B7CB21A000CBD89 /* BASelectionistNeuralNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		633D7FC51B7CB21A000CBD89 /* BASelectionistNeuralNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633D7FBA1B7CB21A000CBD89 /* BASelectionistNeuralNetwork.framework */; };
+		633D7FCA1B7CB21A000CBD89 /* BASelectionistNeuralNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633D7FC91B7CB21A000CBD89 /* BASelectionistNeuralNetworkTests.swift */; };
+		633D7FDC1B7CB33D000CBD89 /* BASelectionistNeuralNetwork_OSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 633D7FDB1B7CB33D000CBD89 /* BASelectionistNeuralNetwork_OSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		633D7FE31B7CB33D000CBD89 /* BASelectionistNeuralNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633D7FD91B7CB33D000CBD89 /* BASelectionistNeuralNetwork.framework */; };
+		633D7FE81B7CB33D000CBD89 /* BASelectionistNeuralNetwork_OSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633D7FE71B7CB33D000CBD89 /* BASelectionistNeuralNetwork_OSXTests.swift */; };
+		63476C931D3D3BFA00CB561E /* Organism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63476C8F1D3D3BFA00CB561E /* Organism.swift */; };
+		63476C941D3D3BFA00CB561E /* SessionStepData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63476C901D3D3BFA00CB561E /* SessionStepData.swift */; };
+		63476C951D3D3BFA00CB561E /* SessionSummaryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63476C911D3D3BFA00CB561E /* SessionSummaryData.swift */; };
+		63476C961D3D3BFA00CB561E /* TrialsLooper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63476C921D3D3BFA00CB561E /* TrialsLooper.swift */; };
+		63476C981D3D3C3400CB561E /* BGL2015Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63476C971D3D3C3400CB561E /* BGL2015Tests.swift */; };
+		63476C991D3D3C3400CB561E /* BGL2015Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63476C971D3D3C3400CB561E /* BGL2015Tests.swift */; };
+		63476C9A1D3D3D6C00CB561E /* Organism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63476C8F1D3D3BFA00CB561E /* Organism.swift */; };
+		63476C9B1D3D3D7100CB561E /* SessionStepData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63476C901D3D3BFA00CB561E /* SessionStepData.swift */; };
+		63476C9C1D3D3D7700CB561E /* SessionSummaryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63476C911D3D3BFA00CB561E /* SessionSummaryData.swift */; };
+		63476C9D1D3D3D7B00CB561E /* TrialsLooper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63476C921D3D3BFA00CB561E /* TrialsLooper.swift */; };
+		635268881C971E9700CEBBFE /* Axon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352686E1C971E9700CEBBFE /* Axon.swift */; };
+		635268891C971E9700CEBBFE /* Axon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352686E1C971E9700CEBBFE /* Axon.swift */; };
+		6352688A1C971E9700CEBBFE /* Axon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352686E1C971E9700CEBBFE /* Axon.swift */; };
+		6352688B1C971E9700CEBBFE /* Axon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352686E1C971E9700CEBBFE /* Axon.swift */; };
+		6352688C1C971E9700CEBBFE /* ComputationalNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352686F1C971E9700CEBBFE /* ComputationalNode.swift */; };
+		6352688D1C971E9700CEBBFE /* ComputationalNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352686F1C971E9700CEBBFE /* ComputationalNode.swift */; };
+		6352688E1C971E9700CEBBFE /* ComputationalNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352686F1C971E9700CEBBFE /* ComputationalNode.swift */; };
+		6352688F1C971E9700CEBBFE /* ComputationalNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352686F1C971E9700CEBBFE /* ComputationalNode.swift */; };
+		635268901C971E9700CEBBFE /* Interneuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268701C971E9700CEBBFE /* Interneuron.swift */; };
+		635268911C971E9700CEBBFE /* Interneuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268701C971E9700CEBBFE /* Interneuron.swift */; };
+		635268921C971E9700CEBBFE /* Interneuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268701C971E9700CEBBFE /* Interneuron.swift */; };
+		635268931C971E9700CEBBFE /* Interneuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268701C971E9700CEBBFE /* Interneuron.swift */; };
+		635268941C971E9700CEBBFE /* Neuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268711C971E9700CEBBFE /* Neuron.swift */; };
+		635268951C971E9700CEBBFE /* Neuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268711C971E9700CEBBFE /* Neuron.swift */; };
+		635268961C971E9700CEBBFE /* Neuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268711C971E9700CEBBFE /* Neuron.swift */; };
+		635268971C971E9700CEBBFE /* Neuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268711C971E9700CEBBFE /* Neuron.swift */; };
+		635268981C971E9700CEBBFE /* OperantNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268721C971E9700CEBBFE /* OperantNeuron.swift */; };
+		635268991C971E9700CEBBFE /* OperantNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268721C971E9700CEBBFE /* OperantNeuron.swift */; };
+		6352689A1C971E9700CEBBFE /* OperantNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268721C971E9700CEBBFE /* OperantNeuron.swift */; };
+		6352689B1C971E9700CEBBFE /* OperantNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268721C971E9700CEBBFE /* OperantNeuron.swift */; };
+		6352689C1C971E9700CEBBFE /* RespondentNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268731C971E9700CEBBFE /* RespondentNeuron.swift */; };
+		6352689D1C971E9700CEBBFE /* RespondentNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268731C971E9700CEBBFE /* RespondentNeuron.swift */; };
+		6352689E1C971E9700CEBBFE /* RespondentNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268731C971E9700CEBBFE /* RespondentNeuron.swift */; };
+		6352689F1C971E9700CEBBFE /* RespondentNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268731C971E9700CEBBFE /* RespondentNeuron.swift */; };
+		635268A01C971E9700CEBBFE /* FindIdentifiedNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268751C971E9700CEBBFE /* FindIdentifiedNode.swift */; };
+		635268A11C971E9700CEBBFE /* FindIdentifiedNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268751C971E9700CEBBFE /* FindIdentifiedNode.swift */; };
+		635268A21C971E9700CEBBFE /* FindIdentifiedNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268751C971E9700CEBBFE /* FindIdentifiedNode.swift */; };
+		635268A31C971E9700CEBBFE /* FindIdentifiedNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268751C971E9700CEBBFE /* FindIdentifiedNode.swift */; };
+		635268A81C971E9700CEBBFE /* DopaminergicNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268781C971E9700CEBBFE /* DopaminergicNeuron.swift */; };
+		635268A91C971E9700CEBBFE /* DopaminergicNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268781C971E9700CEBBFE /* DopaminergicNeuron.swift */; };
+		635268AA1C971E9700CEBBFE /* DopaminergicNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268781C971E9700CEBBFE /* DopaminergicNeuron.swift */; };
+		635268AB1C971E9700CEBBFE /* DopaminergicNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268781C971E9700CEBBFE /* DopaminergicNeuron.swift */; };
+		635268AC1C971E9700CEBBFE /* HippocampalNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268791C971E9700CEBBFE /* HippocampalNeuron.swift */; };
+		635268AD1C971E9700CEBBFE /* HippocampalNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268791C971E9700CEBBFE /* HippocampalNeuron.swift */; };
+		635268AE1C971E9700CEBBFE /* HippocampalNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268791C971E9700CEBBFE /* HippocampalNeuron.swift */; };
+		635268AF1C971E9700CEBBFE /* HippocampalNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268791C971E9700CEBBFE /* HippocampalNeuron.swift */; };
+		635268B01C971E9700CEBBFE /* BinaryEffector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352687B1C971E9700CEBBFE /* BinaryEffector.swift */; };
+		635268B11C971E9700CEBBFE /* BinaryEffector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352687B1C971E9700CEBBFE /* BinaryEffector.swift */; };
+		635268B21C971E9700CEBBFE /* BinaryEffector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352687B1C971E9700CEBBFE /* BinaryEffector.swift */; };
+		635268B31C971E9700CEBBFE /* BinaryEffector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352687B1C971E9700CEBBFE /* BinaryEffector.swift */; };
+		635268B41C971E9700CEBBFE /* Effector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352687C1C971E9700CEBBFE /* Effector.swift */; };
+		635268B51C971E9700CEBBFE /* Effector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352687C1C971E9700CEBBFE /* Effector.swift */; };
+		635268B61C971E9700CEBBFE /* Effector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352687C1C971E9700CEBBFE /* Effector.swift */; };
+		635268B71C971E9700CEBBFE /* Effector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352687C1C971E9700CEBBFE /* Effector.swift */; };
+		635268B81C971E9700CEBBFE /* MotorInterneuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352687E1C971E9700CEBBFE /* MotorInterneuron.swift */; };
+		635268B91C971E9700CEBBFE /* MotorInterneuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352687E1C971E9700CEBBFE /* MotorInterneuron.swift */; };
+		635268BA1C971E9700CEBBFE /* MotorInterneuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352687E1C971E9700CEBBFE /* MotorInterneuron.swift */; };
+		635268BB1C971E9700CEBBFE /* MotorInterneuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352687E1C971E9700CEBBFE /* MotorInterneuron.swift */; };
+		635268BC1C971E9700CEBBFE /* MotorOutputNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352687F1C971E9700CEBBFE /* MotorOutputNeuron.swift */; };
+		635268BD1C971E9700CEBBFE /* MotorOutputNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352687F1C971E9700CEBBFE /* MotorOutputNeuron.swift */; };
+		635268BE1C971E9700CEBBFE /* MotorOutputNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352687F1C971E9700CEBBFE /* MotorOutputNeuron.swift */; };
+		635268BF1C971E9700CEBBFE /* MotorOutputNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6352687F1C971E9700CEBBFE /* MotorOutputNeuron.swift */; };
+		635268C01C971E9700CEBBFE /* BinarySensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268811C971E9700CEBBFE /* BinarySensor.swift */; };
+		635268C11C971E9700CEBBFE /* BinarySensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268811C971E9700CEBBFE /* BinarySensor.swift */; };
+		635268C21C971E9700CEBBFE /* BinarySensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268811C971E9700CEBBFE /* BinarySensor.swift */; };
+		635268C31C971E9700CEBBFE /* BinarySensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268811C971E9700CEBBFE /* BinarySensor.swift */; };
+		635268C41C971E9700CEBBFE /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268821C971E9700CEBBFE /* Sensor.swift */; };
+		635268C51C971E9700CEBBFE /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268821C971E9700CEBBFE /* Sensor.swift */; };
+		635268C61C971E9700CEBBFE /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268821C971E9700CEBBFE /* Sensor.swift */; };
+		635268C71C971E9700CEBBFE /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268821C971E9700CEBBFE /* Sensor.swift */; };
+		635268C81C971E9700CEBBFE /* RespondentSensoryInputNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268841C971E9700CEBBFE /* RespondentSensoryInputNeuron.swift */; };
+		635268C91C971E9700CEBBFE /* RespondentSensoryInputNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268841C971E9700CEBBFE /* RespondentSensoryInputNeuron.swift */; };
+		635268CA1C971E9700CEBBFE /* RespondentSensoryInputNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268841C971E9700CEBBFE /* RespondentSensoryInputNeuron.swift */; };
+		635268CB1C971E9700CEBBFE /* RespondentSensoryInputNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268841C971E9700CEBBFE /* RespondentSensoryInputNeuron.swift */; };
+		635268CC1C971E9700CEBBFE /* SensoryInputNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268851C971E9700CEBBFE /* SensoryInputNeuron.swift */; };
+		635268CD1C971E9700CEBBFE /* SensoryInputNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268851C971E9700CEBBFE /* SensoryInputNeuron.swift */; };
+		635268CE1C971E9700CEBBFE /* SensoryInputNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268851C971E9700CEBBFE /* SensoryInputNeuron.swift */; };
+		635268CF1C971E9700CEBBFE /* SensoryInputNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268851C971E9700CEBBFE /* SensoryInputNeuron.swift */; };
+		635268D01C971E9700CEBBFE /* SensoryInterneuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268861C971E9700CEBBFE /* SensoryInterneuron.swift */; };
+		635268D11C971E9700CEBBFE /* SensoryInterneuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268861C971E9700CEBBFE /* SensoryInterneuron.swift */; };
+		635268D21C971E9700CEBBFE /* SensoryInterneuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268861C971E9700CEBBFE /* SensoryInterneuron.swift */; };
+		635268D31C971E9700CEBBFE /* SensoryInterneuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268861C971E9700CEBBFE /* SensoryInterneuron.swift */; };
+		635268D41C971E9700CEBBFE /* SensoryTestInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268871C971E9700CEBBFE /* SensoryTestInput.swift */; };
+		635268D51C971E9700CEBBFE /* SensoryTestInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268871C971E9700CEBBFE /* SensoryTestInput.swift */; };
+		635268D61C971E9700CEBBFE /* SensoryTestInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268871C971E9700CEBBFE /* SensoryTestInput.swift */; };
+		635268D71C971E9700CEBBFE /* SensoryTestInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635268871C971E9700CEBBFE /* SensoryTestInput.swift */; };
+		6359B90C1D40F630009EAB5F /* NeuralLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6359B90B1D40F630009EAB5F /* NeuralLayer.swift */; };
+		6359B90D1D40F654009EAB5F /* NeuralLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6359B90B1D40F630009EAB5F /* NeuralLayer.swift */; };
+		6359B90E1D410F45009EAB5F /* NeuralLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6359B90B1D40F630009EAB5F /* NeuralLayer.swift */; };
+		6359B90F1D410F46009EAB5F /* NeuralLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6359B90B1D40F630009EAB5F /* NeuralLayer.swift */; };
+		6361B8251CB52AE300DA6B53 /* NodeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6361B8241CB52AE300DA6B53 /* NodeInfo.swift */; };
+		6361B8261CB52AE300DA6B53 /* NodeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6361B8241CB52AE300DA6B53 /* NodeInfo.swift */; };
+		6361B8271CB52AE300DA6B53 /* NodeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6361B8241CB52AE300DA6B53 /* NodeInfo.swift */; };
+		6361B8281CB52AE300DA6B53 /* NodeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6361B8241CB52AE300DA6B53 /* NodeInfo.swift */; };
+		638CC88E1BE4021600254B2C /* TestCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638CC88D1BE4021600254B2C /* TestCalculations.swift */; };
+		638CC88F1BE4021600254B2C /* TestCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638CC88D1BE4021600254B2C /* TestCalculations.swift */; };
+		63B12DB01DB8E27F00870B6D /* Stimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B12DAF1DB8E27F00870B6D /* Stimulation.swift */; };
+		63B12DB21DB8E35200870B6D /* Learning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B12DB11DB8E35200870B6D /* Learning.swift */; };
+		63B12DB31DB8E45500870B6D /* Stimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B12DAF1DB8E27F00870B6D /* Stimulation.swift */; };
+		63B12DB41DB8E45C00870B6D /* Learning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B12DB11DB8E35200870B6D /* Learning.swift */; };
+		63B12DB51DB8E4C200870B6D /* Stimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B12DAF1DB8E27F00870B6D /* Stimulation.swift */; };
+		63B12DB61DB8E4C300870B6D /* Stimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B12DAF1DB8E27F00870B6D /* Stimulation.swift */; };
+		63B12DB71DB8E4C900870B6D /* Learning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B12DB11DB8E35200870B6D /* Learning.swift */; };
+		63B12DB81DB8E4CA00870B6D /* Learning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B12DB11DB8E35200870B6D /* Learning.swift */; };
+		63B12DBA1DB8E78900870B6D /* ConnectionAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B12DB91DB8E78900870B6D /* ConnectionAttributes.swift */; };
+		63B12DBB1DB8ECB800870B6D /* ConnectionAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B12DB91DB8E78900870B6D /* ConnectionAttributes.swift */; };
+		63B12DBC1DB8ECB900870B6D /* ConnectionAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B12DB91DB8E78900870B6D /* ConnectionAttributes.swift */; };
+		63B12DBD1DB8ECB900870B6D /* ConnectionAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B12DB91DB8E78900870B6D /* ConnectionAttributes.swift */; };
+		63C4D0B41D7DD3F800C57C8B /* Activatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C4D0B31D7DD3F800C57C8B /* Activatable.swift */; };
+		63C4D0B51D7DD47A00C57C8B /* Activatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C4D0B31D7DD3F800C57C8B /* Activatable.swift */; };
+		63C4D0B61D7DD5C100C57C8B /* Activatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C4D0B31D7DD3F800C57C8B /* Activatable.swift */; };
+		63C4D0B71D7DD5C200C57C8B /* Activatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C4D0B31D7DD3F800C57C8B /* Activatable.swift */; };
+		63CE21B51D4C066700A09892 /* TestArchiving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE21B41D4C066700A09892 /* TestArchiving.swift */; };
+		63CE21B61D4C066700A09892 /* TestArchiving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE21B41D4C066700A09892 /* TestArchiving.swift */; };
+		63E615401C0CA47000CB31AB /* BGL2015SessionStateMachine.xml in Resources */ = {isa = PBXBuildFile; fileRef = 63E6153F1C0CA47000CB31AB /* BGL2015SessionStateMachine.xml */; };
+		63E615411C0CA47000CB31AB /* BGL2015SessionStateMachine.xml in Resources */ = {isa = PBXBuildFile; fileRef = 63E6153F1C0CA47000CB31AB /* BGL2015SessionStateMachine.xml */; };
+		63E615421C0CA47000CB31AB /* BGL2015SessionStateMachine.xml in Resources */ = {isa = PBXBuildFile; fileRef = 63E6153F1C0CA47000CB31AB /* BGL2015SessionStateMachine.xml */; };
+		63E615431C0CA47000CB31AB /* BGL2015SessionStateMachine.xml in Resources */ = {isa = PBXBuildFile; fileRef = 63E6153F1C0CA47000CB31AB /* BGL2015SessionStateMachine.xml */; };
+		63E88F6D1C88686E00D8E5D2 /* VentralTegmentalArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F581C88686E00D8E5D2 /* VentralTegmentalArea.swift */; };
+		63E88F6E1C88686E00D8E5D2 /* VentralTegmentalArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F581C88686E00D8E5D2 /* VentralTegmentalArea.swift */; };
+		63E88F6F1C88686E00D8E5D2 /* VentralTegmentalArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F581C88686E00D8E5D2 /* VentralTegmentalArea.swift */; };
+		63E88F701C88686E00D8E5D2 /* VentralTegmentalArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F581C88686E00D8E5D2 /* VentralTegmentalArea.swift */; };
+		63E88F781C88688100D8E5D2 /* Hippocampus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F721C88688100D8E5D2 /* Hippocampus.swift */; };
+		63E88F791C88688100D8E5D2 /* Hippocampus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F721C88688100D8E5D2 /* Hippocampus.swift */; };
+		63E88F7A1C88688100D8E5D2 /* Hippocampus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F721C88688100D8E5D2 /* Hippocampus.swift */; };
+		63E88F7B1C88688100D8E5D2 /* Hippocampus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F721C88688100D8E5D2 /* Hippocampus.swift */; };
+		63E88F971C8868F000D8E5D2 /* SensoryAssociationArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F911C8868F000D8E5D2 /* SensoryAssociationArea.swift */; };
+		63E88F981C8868F000D8E5D2 /* SensoryAssociationArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F911C8868F000D8E5D2 /* SensoryAssociationArea.swift */; };
+		63E88F991C8868F000D8E5D2 /* SensoryAssociationArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F911C8868F000D8E5D2 /* SensoryAssociationArea.swift */; };
+		63E88F9A1C8868F000D8E5D2 /* SensoryAssociationArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F911C8868F000D8E5D2 /* SensoryAssociationArea.swift */; };
+		63E88F9B1C8868F000D8E5D2 /* SensoryAssociationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F921C8868F000D8E5D2 /* SensoryAssociationLayer.swift */; };
+		63E88F9C1C8868F000D8E5D2 /* SensoryAssociationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F921C8868F000D8E5D2 /* SensoryAssociationLayer.swift */; };
+		63E88F9D1C8868F000D8E5D2 /* SensoryAssociationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F921C8868F000D8E5D2 /* SensoryAssociationLayer.swift */; };
+		63E88F9E1C8868F000D8E5D2 /* SensoryAssociationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F921C8868F000D8E5D2 /* SensoryAssociationLayer.swift */; };
+		63E88F9F1C8868F000D8E5D2 /* SensoryAssociationRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F931C8868F000D8E5D2 /* SensoryAssociationRegion.swift */; };
+		63E88FA01C8868F000D8E5D2 /* SensoryAssociationRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F931C8868F000D8E5D2 /* SensoryAssociationRegion.swift */; };
+		63E88FA11C8868F000D8E5D2 /* SensoryAssociationRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F931C8868F000D8E5D2 /* SensoryAssociationRegion.swift */; };
+		63E88FA21C8868F000D8E5D2 /* SensoryAssociationRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F931C8868F000D8E5D2 /* SensoryAssociationRegion.swift */; };
+		63E88FA31C8868F000D8E5D2 /* SensoryInputArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F951C8868F000D8E5D2 /* SensoryInputArea.swift */; };
+		63E88FA41C8868F000D8E5D2 /* SensoryInputArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F951C8868F000D8E5D2 /* SensoryInputArea.swift */; };
+		63E88FA51C8868F000D8E5D2 /* SensoryInputArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F951C8868F000D8E5D2 /* SensoryInputArea.swift */; };
+		63E88FA61C8868F000D8E5D2 /* SensoryInputArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F951C8868F000D8E5D2 /* SensoryInputArea.swift */; };
+		63E88FA71C8868F000D8E5D2 /* SensoryInputRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F961C8868F000D8E5D2 /* SensoryInputRegion.swift */; };
+		63E88FA81C8868F000D8E5D2 /* SensoryInputRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F961C8868F000D8E5D2 /* SensoryInputRegion.swift */; };
+		63E88FA91C8868F000D8E5D2 /* SensoryInputRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F961C8868F000D8E5D2 /* SensoryInputRegion.swift */; };
+		63E88FAA1C8868F000D8E5D2 /* SensoryInputRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88F961C8868F000D8E5D2 /* SensoryInputRegion.swift */; };
+		63E88FB51C886A4600D8E5D2 /* MotorAssociationArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FAC1C886A4600D8E5D2 /* MotorAssociationArea.swift */; };
+		63E88FB61C886A4600D8E5D2 /* MotorAssociationArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FAC1C886A4600D8E5D2 /* MotorAssociationArea.swift */; };
+		63E88FB71C886A4600D8E5D2 /* MotorAssociationArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FAC1C886A4600D8E5D2 /* MotorAssociationArea.swift */; };
+		63E88FB81C886A4600D8E5D2 /* MotorAssociationArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FAC1C886A4600D8E5D2 /* MotorAssociationArea.swift */; };
+		63E88FB91C886A4600D8E5D2 /* MotorAssociationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FAD1C886A4600D8E5D2 /* MotorAssociationLayer.swift */; };
+		63E88FBA1C886A4600D8E5D2 /* MotorAssociationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FAD1C886A4600D8E5D2 /* MotorAssociationLayer.swift */; };
+		63E88FBB1C886A4600D8E5D2 /* MotorAssociationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FAD1C886A4600D8E5D2 /* MotorAssociationLayer.swift */; };
+		63E88FBC1C886A4600D8E5D2 /* MotorAssociationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FAD1C886A4600D8E5D2 /* MotorAssociationLayer.swift */; };
+		63E88FBD1C886A4600D8E5D2 /* MotorAssociationRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FAE1C886A4600D8E5D2 /* MotorAssociationRegion.swift */; };
+		63E88FBE1C886A4600D8E5D2 /* MotorAssociationRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FAE1C886A4600D8E5D2 /* MotorAssociationRegion.swift */; };
+		63E88FBF1C886A4600D8E5D2 /* MotorAssociationRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FAE1C886A4600D8E5D2 /* MotorAssociationRegion.swift */; };
+		63E88FC01C886A4600D8E5D2 /* MotorAssociationRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FAE1C886A4600D8E5D2 /* MotorAssociationRegion.swift */; };
+		63E88FC11C886A4600D8E5D2 /* MotorAssociativeNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FAF1C886A4600D8E5D2 /* MotorAssociativeNeuron.swift */; };
+		63E88FC21C886A4600D8E5D2 /* MotorAssociativeNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FAF1C886A4600D8E5D2 /* MotorAssociativeNeuron.swift */; };
+		63E88FC31C886A4600D8E5D2 /* MotorAssociativeNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FAF1C886A4600D8E5D2 /* MotorAssociativeNeuron.swift */; };
+		63E88FC41C886A4600D8E5D2 /* MotorAssociativeNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FAF1C886A4600D8E5D2 /* MotorAssociativeNeuron.swift */; };
+		63E88FC51C886A4600D8E5D2 /* DopaminergicUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FB01C886A4600D8E5D2 /* DopaminergicUnit.swift */; };
+		63E88FC61C886A4600D8E5D2 /* DopaminergicUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FB01C886A4600D8E5D2 /* DopaminergicUnit.swift */; };
+		63E88FC71C886A4600D8E5D2 /* DopaminergicUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FB01C886A4600D8E5D2 /* DopaminergicUnit.swift */; };
+		63E88FC81C886A4600D8E5D2 /* DopaminergicUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FB01C886A4600D8E5D2 /* DopaminergicUnit.swift */; };
+		63E88FC91C886A4600D8E5D2 /* MotorNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FB21C886A4600D8E5D2 /* MotorNeuron.swift */; };
+		63E88FCA1C886A4600D8E5D2 /* MotorNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FB21C886A4600D8E5D2 /* MotorNeuron.swift */; };
+		63E88FCB1C886A4600D8E5D2 /* MotorNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FB21C886A4600D8E5D2 /* MotorNeuron.swift */; };
+		63E88FCC1C886A4600D8E5D2 /* MotorNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FB21C886A4600D8E5D2 /* MotorNeuron.swift */; };
+		63E88FCD1C886A4600D8E5D2 /* MotorOutputArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FB31C886A4600D8E5D2 /* MotorOutputArea.swift */; };
+		63E88FCE1C886A4600D8E5D2 /* MotorOutputArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FB31C886A4600D8E5D2 /* MotorOutputArea.swift */; };
+		63E88FCF1C886A4600D8E5D2 /* MotorOutputArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FB31C886A4600D8E5D2 /* MotorOutputArea.swift */; };
+		63E88FD01C886A4600D8E5D2 /* MotorOutputArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FB31C886A4600D8E5D2 /* MotorOutputArea.swift */; };
+		63E88FD11C886A4600D8E5D2 /* MotorOutputRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FB41C886A4600D8E5D2 /* MotorOutputRegion.swift */; };
+		63E88FD21C886A4600D8E5D2 /* MotorOutputRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FB41C886A4600D8E5D2 /* MotorOutputRegion.swift */; };
+		63E88FD31C886A4600D8E5D2 /* MotorOutputRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FB41C886A4600D8E5D2 /* MotorOutputRegion.swift */; };
+		63E88FD41C886A4600D8E5D2 /* MotorOutputRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FB41C886A4600D8E5D2 /* MotorOutputRegion.swift */; };
+		63E88FDE1C886A8D00D8E5D2 /* OperantInputNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FD61C886A8D00D8E5D2 /* OperantInputNeuron.swift */; };
+		63E88FDF1C886A8D00D8E5D2 /* OperantInputNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FD61C886A8D00D8E5D2 /* OperantInputNeuron.swift */; };
+		63E88FE01C886A8D00D8E5D2 /* OperantInputNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FD61C886A8D00D8E5D2 /* OperantInputNeuron.swift */; };
+		63E88FE11C886A8D00D8E5D2 /* OperantInputNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FD61C886A8D00D8E5D2 /* OperantInputNeuron.swift */; };
+		63E88FE21C886A8D00D8E5D2 /* OperantTestInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FD71C886A8D00D8E5D2 /* OperantTestInput.swift */; };
+		63E88FE31C886A8D00D8E5D2 /* OperantTestInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FD71C886A8D00D8E5D2 /* OperantTestInput.swift */; };
+		63E88FE41C886A8D00D8E5D2 /* OperantTestInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FD71C886A8D00D8E5D2 /* OperantTestInput.swift */; };
+		63E88FE51C886A8D00D8E5D2 /* OperantTestInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FD71C886A8D00D8E5D2 /* OperantTestInput.swift */; };
+		63E88FE61C886A8D00D8E5D2 /* PavlovianInputNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FD81C886A8D00D8E5D2 /* PavlovianInputNeuron.swift */; };
+		63E88FE71C886A8D00D8E5D2 /* PavlovianInputNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FD81C886A8D00D8E5D2 /* PavlovianInputNeuron.swift */; };
+		63E88FE81C886A8D00D8E5D2 /* PavlovianInputNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FD81C886A8D00D8E5D2 /* PavlovianInputNeuron.swift */; };
+		63E88FE91C886A8D00D8E5D2 /* PavlovianInputNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FD81C886A8D00D8E5D2 /* PavlovianInputNeuron.swift */; };
+		63E88FEA1C886A8D00D8E5D2 /* PavlovianTestInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FD91C886A8D00D8E5D2 /* PavlovianTestInput.swift */; };
+		63E88FEB1C886A8D00D8E5D2 /* PavlovianTestInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FD91C886A8D00D8E5D2 /* PavlovianTestInput.swift */; };
+		63E88FEC1C886A8D00D8E5D2 /* PavlovianTestInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FD91C886A8D00D8E5D2 /* PavlovianTestInput.swift */; };
+		63E88FED1C886A8D00D8E5D2 /* PavlovianTestInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FD91C886A8D00D8E5D2 /* PavlovianTestInput.swift */; };
+		63E88FEF1C886A9700D8E5D2 /* SensoryAssociativeNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FEE1C886A9700D8E5D2 /* SensoryAssociativeNeuron.swift */; };
+		63E88FF01C886A9700D8E5D2 /* SensoryAssociativeNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FEE1C886A9700D8E5D2 /* SensoryAssociativeNeuron.swift */; };
+		63E88FF11C886A9700D8E5D2 /* SensoryAssociativeNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FEE1C886A9700D8E5D2 /* SensoryAssociativeNeuron.swift */; };
+		63E88FF21C886A9700D8E5D2 /* SensoryAssociativeNeuron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FEE1C886A9700D8E5D2 /* SensoryAssociativeNeuron.swift */; };
+		63E88FF41C886AC600D8E5D2 /* HippocampalUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FF31C886AC600D8E5D2 /* HippocampalUnit.swift */; };
+		63E88FF51C886AC600D8E5D2 /* HippocampalUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FF31C886AC600D8E5D2 /* HippocampalUnit.swift */; };
+		63E88FF61C886AC600D8E5D2 /* HippocampalUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FF31C886AC600D8E5D2 /* HippocampalUnit.swift */; };
+		63E88FF71C886AC600D8E5D2 /* HippocampalUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FF31C886AC600D8E5D2 /* HippocampalUnit.swift */; };
+		63E88FFA1C886B3200D8E5D2 /* SimpleBinarySensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FF91C886B3200D8E5D2 /* SimpleBinarySensor.swift */; };
+		63E88FFB1C886B3200D8E5D2 /* SimpleBinarySensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FF91C886B3200D8E5D2 /* SimpleBinarySensor.swift */; };
+		63E88FFC1C886B3200D8E5D2 /* SimpleBinarySensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FF91C886B3200D8E5D2 /* SimpleBinarySensor.swift */; };
+		63E88FFD1C886B3200D8E5D2 /* SimpleBinarySensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FF91C886B3200D8E5D2 /* SimpleBinarySensor.swift */; };
+		63E890001C88856D00D8E5D2 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FFF1C88856D00D8E5D2 /* Node.swift */; };
+		63E890011C88856D00D8E5D2 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FFF1C88856D00D8E5D2 /* Node.swift */; };
+		63E890021C88856D00D8E5D2 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FFF1C88856D00D8E5D2 /* Node.swift */; };
+		63E890031C88856D00D8E5D2 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E88FFF1C88856D00D8E5D2 /* Node.swift */; };
+		63E8900A1C88A38400D8E5D2 /* SensorArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E890091C88A38400D8E5D2 /* SensorArea.swift */; };
+		63E8900B1C88A38400D8E5D2 /* SensorArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E890091C88A38400D8E5D2 /* SensorArea.swift */; };
+		63E8900C1C88A38400D8E5D2 /* SensorArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E890091C88A38400D8E5D2 /* SensorArea.swift */; };
+		63E8900D1C88A38400D8E5D2 /* SensorArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E890091C88A38400D8E5D2 /* SensorArea.swift */; };
+		63E8900F1C88ACCA00D8E5D2 /* SensorRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E8900E1C88ACCA00D8E5D2 /* SensorRegion.swift */; };
+		63E890101C88ACCA00D8E5D2 /* SensorRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E8900E1C88ACCA00D8E5D2 /* SensorRegion.swift */; };
+		63E890111C88ACCA00D8E5D2 /* SensorRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E8900E1C88ACCA00D8E5D2 /* SensorRegion.swift */; };
+		63E890121C88ACCA00D8E5D2 /* SensorRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E8900E1C88ACCA00D8E5D2 /* SensorRegion.swift */; };
+		63E890191C89C09B00D8E5D2 /* EffectorArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E890181C89C09B00D8E5D2 /* EffectorArea.swift */; };
+		63E8901A1C89C09B00D8E5D2 /* EffectorArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E890181C89C09B00D8E5D2 /* EffectorArea.swift */; };
+		63E8901B1C89C09B00D8E5D2 /* EffectorArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E890181C89C09B00D8E5D2 /* EffectorArea.swift */; };
+		63E8901C1C89C09B00D8E5D2 /* EffectorArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E890181C89C09B00D8E5D2 /* EffectorArea.swift */; };
+		63E8901E1C89C3D500D8E5D2 /* EffectorRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E8901D1C89C3D500D8E5D2 /* EffectorRegion.swift */; };
+		63E8901F1C89C3D500D8E5D2 /* EffectorRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E8901D1C89C3D500D8E5D2 /* EffectorRegion.swift */; };
+		63E890201C89C3D500D8E5D2 /* EffectorRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E8901D1C89C3D500D8E5D2 /* EffectorRegion.swift */; };
+		63E890211C89C3D500D8E5D2 /* EffectorRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E8901D1C89C3D500D8E5D2 /* EffectorRegion.swift */; };
+		63E890231C89C45500D8E5D2 /* SimpleBinaryEffector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E890221C89C45500D8E5D2 /* SimpleBinaryEffector.swift */; };
+		63E890241C89C45500D8E5D2 /* SimpleBinaryEffector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E890221C89C45500D8E5D2 /* SimpleBinaryEffector.swift */; };
+		63E890251C89C45500D8E5D2 /* SimpleBinaryEffector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E890221C89C45500D8E5D2 /* SimpleBinaryEffector.swift */; };
+		63E890261C89C45500D8E5D2 /* SimpleBinaryEffector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E890221C89C45500D8E5D2 /* SimpleBinaryEffector.swift */; };
+		63E890281C89E31D00D8E5D2 /* NetworkUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E890271C89E31D00D8E5D2 /* NetworkUpdater.swift */; };
+		63E890291C89E31D00D8E5D2 /* NetworkUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E890271C89E31D00D8E5D2 /* NetworkUpdater.swift */; };
+		63E8902A1C89E31D00D8E5D2 /* NetworkUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E890271C89E31D00D8E5D2 /* NetworkUpdater.swift */; };
+		63E8902B1C89E31D00D8E5D2 /* NetworkUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E890271C89E31D00D8E5D2 /* NetworkUpdater.swift */; };
+		63E8902D1C8A2FFD00D8E5D2 /* RandomizedContinuousPropogationUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E8902C1C8A2FFD00D8E5D2 /* RandomizedContinuousPropogationUpdater.swift */; };
+		63E8902E1C8A2FFD00D8E5D2 /* RandomizedContinuousPropogationUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E8902C1C8A2FFD00D8E5D2 /* RandomizedContinuousPropogationUpdater.swift */; };
+		63E8902F1C8A2FFD00D8E5D2 /* RandomizedContinuousPropogationUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E8902C1C8A2FFD00D8E5D2 /* RandomizedContinuousPropogationUpdater.swift */; };
+		63E890301C8A2FFD00D8E5D2 /* RandomizedContinuousPropogationUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E8902C1C8A2FFD00D8E5D2 /* RandomizedContinuousPropogationUpdater.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		633D7FC61B7CB21A000CBD89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 633D7FB11B7CB21A000CBD89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 633D7FB91B7CB21A000CBD89;
+			remoteInfo = BASelectionistNeuralNetwork;
+		};
+		633D7FE41B7CB33D000CBD89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 633D7FB11B7CB21A000CBD89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 633D7FD81B7CB33D000CBD89;
+			remoteInfo = BASelectionistNeuralNetwork_OSX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		631D258A1BAF413500073490 /* TestNetworkContainers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNetworkContainers.swift; sourceTree = "<group>"; };
+		631E2D6E1BF129BC009BEF9B /* ComputationalNodeBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputationalNodeBody.swift; sourceTree = "<group>"; };
+		631E2D6F1BF129BC009BEF9B /* NodeBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeBody.swift; sourceTree = "<group>"; };
+		631E2D701BF129BC009BEF9B /* OperantConnections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperantConnections.swift; sourceTree = "<group>"; };
+		631E2D711BF129BC009BEF9B /* OperantNeuronBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperantNeuronBody.swift; sourceTree = "<group>"; };
+		631E2D721BF129BC009BEF9B /* RespondentConnections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RespondentConnections.swift; sourceTree = "<group>"; };
+		631E2D731BF129BC009BEF9B /* RespondentNeuronBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RespondentNeuronBody.swift; sourceTree = "<group>"; };
+		631E2D741BF129BC009BEF9B /* UnweightedConnections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnweightedConnections.swift; sourceTree = "<group>"; };
+		631E2D751BF129BC009BEF9B /* WeightedConnections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightedConnections.swift; sourceTree = "<group>"; };
+		631E2D771BF129BC009BEF9B /* ActivationSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivationSettings.swift; sourceTree = "<group>"; };
+		631E2D791BF129BC009BEF9B /* LearningSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningSettings.swift; sourceTree = "<group>"; };
+		631E2D7F1BF129BC009BEF9B /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		631E2D801BF129BC009BEF9B /* ReactivationThreshold.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactivationThreshold.swift; sourceTree = "<group>"; };
+		6325F0DB1D81C80500D41E6E /* ActivatableNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivatableNode.swift; sourceTree = "<group>"; };
+		6325F0E01D881FEB00D41E6E /* NeuralRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeuralRegion.swift; sourceTree = "<group>"; };
+		6325F0E51D88205F00D41E6E /* NeuralArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeuralArea.swift; sourceTree = "<group>"; };
+		6325F0EA1D883F1000D41E6E /* NeuralMultiLayerArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeuralMultiLayerArea.swift; sourceTree = "<group>"; };
+		6325F0EF1D88757A00D41E6E /* NeuralSingleLayerArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeuralSingleLayerArea.swift; sourceTree = "<group>"; };
+		633D7FBA1B7CB21A000CBD89 /* BASelectionistNeuralNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BASelectionistNeuralNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		633D7FBD1B7CB21A000CBD89 /* BASelectionistNeuralNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BASelectionistNeuralNetwork.h; sourceTree = "<group>"; };
+		633D7FBF1B7CB21A000CBD89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		633D7FC41B7CB21A000CBD89 /* BASelectionistNeuralNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BASelectionistNeuralNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		633D7FC91B7CB21A000CBD89 /* BASelectionistNeuralNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BASelectionistNeuralNetworkTests.swift; sourceTree = "<group>"; };
+		633D7FCB1B7CB21A000CBD89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		633D7FD91B7CB33D000CBD89 /* BASelectionistNeuralNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BASelectionistNeuralNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		633D7FDB1B7CB33D000CBD89 /* BASelectionistNeuralNetwork_OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BASelectionistNeuralNetwork_OSX.h; sourceTree = "<group>"; };
+		633D7FDD1B7CB33D000CBD89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		633D7FE21B7CB33D000CBD89 /* BASelectionistNeuralNetwork_OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BASelectionistNeuralNetwork_OSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		633D7FE71B7CB33D000CBD89 /* BASelectionistNeuralNetwork_OSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BASelectionistNeuralNetwork_OSXTests.swift; sourceTree = "<group>"; };
+		633D7FE91B7CB33D000CBD89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63476C8F1D3D3BFA00CB561E /* Organism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Organism.swift; sourceTree = "<group>"; };
+		63476C901D3D3BFA00CB561E /* SessionStepData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionStepData.swift; sourceTree = "<group>"; };
+		63476C911D3D3BFA00CB561E /* SessionSummaryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionSummaryData.swift; sourceTree = "<group>"; };
+		63476C921D3D3BFA00CB561E /* TrialsLooper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrialsLooper.swift; sourceTree = "<group>"; };
+		63476C971D3D3C3400CB561E /* BGL2015Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGL2015Tests.swift; sourceTree = "<group>"; };
+		6352686E1C971E9700CEBBFE /* Axon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Axon.swift; sourceTree = "<group>"; };
+		6352686F1C971E9700CEBBFE /* ComputationalNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputationalNode.swift; sourceTree = "<group>"; };
+		635268701C971E9700CEBBFE /* Interneuron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interneuron.swift; sourceTree = "<group>"; };
+		635268711C971E9700CEBBFE /* Neuron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Neuron.swift; sourceTree = "<group>"; };
+		635268721C971E9700CEBBFE /* OperantNeuron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperantNeuron.swift; sourceTree = "<group>"; };
+		635268731C971E9700CEBBFE /* RespondentNeuron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RespondentNeuron.swift; sourceTree = "<group>"; };
+		635268751C971E9700CEBBFE /* FindIdentifiedNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindIdentifiedNode.swift; sourceTree = "<group>"; };
+		635268781C971E9700CEBBFE /* DopaminergicNeuron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DopaminergicNeuron.swift; sourceTree = "<group>"; };
+		635268791C971E9700CEBBFE /* HippocampalNeuron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HippocampalNeuron.swift; sourceTree = "<group>"; };
+		6352687B1C971E9700CEBBFE /* BinaryEffector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryEffector.swift; sourceTree = "<group>"; };
+		6352687C1C971E9700CEBBFE /* Effector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Effector.swift; sourceTree = "<group>"; };
+		6352687E1C971E9700CEBBFE /* MotorInterneuron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotorInterneuron.swift; sourceTree = "<group>"; };
+		6352687F1C971E9700CEBBFE /* MotorOutputNeuron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotorOutputNeuron.swift; sourceTree = "<group>"; };
+		635268811C971E9700CEBBFE /* BinarySensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySensor.swift; sourceTree = "<group>"; };
+		635268821C971E9700CEBBFE /* Sensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
+		635268841C971E9700CEBBFE /* RespondentSensoryInputNeuron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RespondentSensoryInputNeuron.swift; sourceTree = "<group>"; };
+		635268851C971E9700CEBBFE /* SensoryInputNeuron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensoryInputNeuron.swift; sourceTree = "<group>"; };
+		635268861C971E9700CEBBFE /* SensoryInterneuron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensoryInterneuron.swift; sourceTree = "<group>"; };
+		635268871C971E9700CEBBFE /* SensoryTestInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensoryTestInput.swift; sourceTree = "<group>"; };
+		6359B90B1D40F630009EAB5F /* NeuralLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeuralLayer.swift; sourceTree = "<group>"; };
+		635A6C9C1C00FF7000CE01D2 /* GameplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameplayKit.framework; path = System/Library/Frameworks/GameplayKit.framework; sourceTree = SDKROOT; };
+		6361B8241CB52AE300DA6B53 /* NodeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeInfo.swift; sourceTree = "<group>"; };
+		638CC88C1BE3D27E00254B2C /* NeuralNetwork_OSX.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NeuralNetwork_OSX.playground; sourceTree = "<group>"; };
+		638CC88D1BE4021600254B2C /* TestCalculations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCalculations.swift; sourceTree = "<group>"; };
+		63B12DAF1DB8E27F00870B6D /* Stimulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stimulation.swift; sourceTree = "<group>"; };
+		63B12DB11DB8E35200870B6D /* Learning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Learning.swift; sourceTree = "<group>"; };
+		63B12DB91DB8E78900870B6D /* ConnectionAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionAttributes.swift; sourceTree = "<group>"; };
+		63C4D0B31D7DD3F800C57C8B /* Activatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activatable.swift; sourceTree = "<group>"; };
+		63CE21B41D4C066700A09892 /* TestArchiving.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestArchiving.swift; sourceTree = "<group>"; };
+		63E6153F1C0CA47000CB31AB /* BGL2015SessionStateMachine.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; lineEnding = 0; path = BGL2015SessionStateMachine.xml; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xml; };
+		63E88F581C88686E00D8E5D2 /* VentralTegmentalArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VentralTegmentalArea.swift; sourceTree = "<group>"; };
+		63E88F721C88688100D8E5D2 /* Hippocampus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hippocampus.swift; sourceTree = "<group>"; };
+		63E88F911C8868F000D8E5D2 /* SensoryAssociationArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensoryAssociationArea.swift; sourceTree = "<group>"; };
+		63E88F921C8868F000D8E5D2 /* SensoryAssociationLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensoryAssociationLayer.swift; sourceTree = "<group>"; };
+		63E88F931C8868F000D8E5D2 /* SensoryAssociationRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensoryAssociationRegion.swift; sourceTree = "<group>"; };
+		63E88F951C8868F000D8E5D2 /* SensoryInputArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensoryInputArea.swift; sourceTree = "<group>"; };
+		63E88F961C8868F000D8E5D2 /* SensoryInputRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensoryInputRegion.swift; sourceTree = "<group>"; };
+		63E88FAC1C886A4600D8E5D2 /* MotorAssociationArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotorAssociationArea.swift; sourceTree = "<group>"; };
+		63E88FAD1C886A4600D8E5D2 /* MotorAssociationLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotorAssociationLayer.swift; sourceTree = "<group>"; };
+		63E88FAE1C886A4600D8E5D2 /* MotorAssociationRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotorAssociationRegion.swift; sourceTree = "<group>"; };
+		63E88FAF1C886A4600D8E5D2 /* MotorAssociativeNeuron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotorAssociativeNeuron.swift; sourceTree = "<group>"; };
+		63E88FB01C886A4600D8E5D2 /* DopaminergicUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DopaminergicUnit.swift; sourceTree = "<group>"; };
+		63E88FB21C886A4600D8E5D2 /* MotorNeuron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotorNeuron.swift; sourceTree = "<group>"; };
+		63E88FB31C886A4600D8E5D2 /* MotorOutputArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotorOutputArea.swift; sourceTree = "<group>"; };
+		63E88FB41C886A4600D8E5D2 /* MotorOutputRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotorOutputRegion.swift; sourceTree = "<group>"; };
+		63E88FD61C886A8D00D8E5D2 /* OperantInputNeuron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperantInputNeuron.swift; sourceTree = "<group>"; };
+		63E88FD71C886A8D00D8E5D2 /* OperantTestInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperantTestInput.swift; sourceTree = "<group>"; };
+		63E88FD81C886A8D00D8E5D2 /* PavlovianInputNeuron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PavlovianInputNeuron.swift; sourceTree = "<group>"; };
+		63E88FD91C886A8D00D8E5D2 /* PavlovianTestInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PavlovianTestInput.swift; sourceTree = "<group>"; };
+		63E88FEE1C886A9700D8E5D2 /* SensoryAssociativeNeuron.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensoryAssociativeNeuron.swift; sourceTree = "<group>"; };
+		63E88FF31C886AC600D8E5D2 /* HippocampalUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HippocampalUnit.swift; sourceTree = "<group>"; };
+		63E88FF91C886B3200D8E5D2 /* SimpleBinarySensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleBinarySensor.swift; sourceTree = "<group>"; };
+		63E88FFF1C88856D00D8E5D2 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		63E890091C88A38400D8E5D2 /* SensorArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorArea.swift; sourceTree = "<group>"; };
+		63E8900E1C88ACCA00D8E5D2 /* SensorRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorRegion.swift; sourceTree = "<group>"; };
+		63E890181C89C09B00D8E5D2 /* EffectorArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectorArea.swift; sourceTree = "<group>"; };
+		63E8901D1C89C3D500D8E5D2 /* EffectorRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectorRegion.swift; sourceTree = "<group>"; };
+		63E890221C89C45500D8E5D2 /* SimpleBinaryEffector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleBinaryEffector.swift; sourceTree = "<group>"; };
+		63E890271C89E31D00D8E5D2 /* NetworkUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUpdater.swift; sourceTree = "<group>"; };
+		63E8902C1C8A2FFD00D8E5D2 /* RandomizedContinuousPropogationUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomizedContinuousPropogationUpdater.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		633D7FB61B7CB21A000CBD89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633D7FC11B7CB21A000CBD89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633D7FC51B7CB21A000CBD89 /* BASelectionistNeuralNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633D7FD51B7CB33D000CBD89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633D7FDF1B7CB33D000CBD89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633D7FE31B7CB33D000CBD89 /* BASelectionistNeuralNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		631E2D6D1BF129BC009BEF9B /* Internals */ = {
+			isa = PBXGroup;
+			children = (
+				631E2D741BF129BC009BEF9B /* UnweightedConnections.swift */,
+				631E2D751BF129BC009BEF9B /* WeightedConnections.swift */,
+				631E2D6F1BF129BC009BEF9B /* NodeBody.swift */,
+				631E2D6E1BF129BC009BEF9B /* ComputationalNodeBody.swift */,
+				631E2D701BF129BC009BEF9B /* OperantConnections.swift */,
+				631E2D711BF129BC009BEF9B /* OperantNeuronBody.swift */,
+				631E2D721BF129BC009BEF9B /* RespondentConnections.swift */,
+				631E2D731BF129BC009BEF9B /* RespondentNeuronBody.swift */,
+			);
+			path = Internals;
+			sourceTree = "<group>";
+		};
+		631E2D761BF129BC009BEF9B /* MajorComponents */ = {
+			isa = PBXGroup;
+			children = (
+				63B12DAF1DB8E27F00870B6D /* Stimulation.swift */,
+				63B12DB11DB8E35200870B6D /* Learning.swift */,
+				63B12DB91DB8E78900870B6D /* ConnectionAttributes.swift */,
+				631E2D7F1BF129BC009BEF9B /* Network.swift */,
+				631E2D771BF129BC009BEF9B /* ActivationSettings.swift */,
+				631E2D791BF129BC009BEF9B /* LearningSettings.swift */,
+				631E2D801BF129BC009BEF9B /* ReactivationThreshold.swift */,
+				63E8902C1C8A2FFD00D8E5D2 /* RandomizedContinuousPropogationUpdater.swift */,
+				6361B8241CB52AE300DA6B53 /* NodeInfo.swift */,
+				63E88F711C88688100D8E5D2 /* Sensory */,
+				63E88F521C88686E00D8E5D2 /* Motor */,
+			);
+			path = MajorComponents;
+			sourceTree = "<group>";
+		};
+		631E2D911BF129BC009BEF9B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				63E88FFF1C88856D00D8E5D2 /* Node.swift */,
+				63C4D0B31D7DD3F800C57C8B /* Activatable.swift */,
+				6325F0DB1D81C80500D41E6E /* ActivatableNode.swift */,
+				63E890271C89E31D00D8E5D2 /* NetworkUpdater.swift */,
+				635268741C971E9700CEBBFE /* Containers */,
+				6352686D1C971E9700CEBBFE /* BaseNeurons */,
+				635268801C971E9700CEBBFE /* Sensor */,
+				635268771C971E9700CEBBFE /* DiscrepancyNeurons */,
+				635268831C971E9700CEBBFE /* SensoryNeurons */,
+				6352687D1C971E9700CEBBFE /* MotorNeurons */,
+				6352687A1C971E9700CEBBFE /* Effector */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		633D7FB01B7CB21A000CBD89 = {
+			isa = PBXGroup;
+			children = (
+				635A6C9C1C00FF7000CE01D2 /* GameplayKit.framework */,
+				633D7FBC1B7CB21A000CBD89 /* BASelectionistNeuralNetwork */,
+				633D7FC81B7CB21A000CBD89 /* BASelectionistNeuralNetworkTests */,
+				633D7FDA1B7CB33D000CBD89 /* BASelectionistNeuralNetwork_OSX */,
+				633D7FE61B7CB33D000CBD89 /* BASelectionistNeuralNetwork_OSXTests */,
+				633D7FBB1B7CB21A000CBD89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		633D7FBB1B7CB21A000CBD89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				633D7FBA1B7CB21A000CBD89 /* BASelectionistNeuralNetwork.framework */,
+				633D7FC41B7CB21A000CBD89 /* BASelectionistNeuralNetworkTests.xctest */,
+				633D7FD91B7CB33D000CBD89 /* BASelectionistNeuralNetwork.framework */,
+				633D7FE21B7CB33D000CBD89 /* BASelectionistNeuralNetwork_OSXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		633D7FBC1B7CB21A000CBD89 /* BASelectionistNeuralNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				633D7FBD1B7CB21A000CBD89 /* BASelectionistNeuralNetwork.h */,
+				633D7FBF1B7CB21A000CBD89 /* Info.plist */,
+				63E6153F1C0CA47000CB31AB /* BGL2015SessionStateMachine.xml */,
+				633D7FF01B7CB378000CBD89 /* CrossPlatformClasses */,
+			);
+			path = BASelectionistNeuralNetwork;
+			sourceTree = "<group>";
+		};
+		633D7FC81B7CB21A000CBD89 /* BASelectionistNeuralNetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				633D7FC91B7CB21A000CBD89 /* BASelectionistNeuralNetworkTests.swift */,
+				633D7FCB1B7CB21A000CBD89 /* Info.plist */,
+				633D7FF21B7CB3C8000CBD89 /* CrossPlatformTests */,
+			);
+			path = BASelectionistNeuralNetworkTests;
+			sourceTree = "<group>";
+		};
+		633D7FDA1B7CB33D000CBD89 /* BASelectionistNeuralNetwork_OSX */ = {
+			isa = PBXGroup;
+			children = (
+				638CC88C1BE3D27E00254B2C /* NeuralNetwork_OSX.playground */,
+				633D7FDB1B7CB33D000CBD89 /* BASelectionistNeuralNetwork_OSX.h */,
+				633D7FDD1B7CB33D000CBD89 /* Info.plist */,
+			);
+			path = BASelectionistNeuralNetwork_OSX;
+			sourceTree = "<group>";
+		};
+		633D7FE61B7CB33D000CBD89 /* BASelectionistNeuralNetwork_OSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				633D7FE71B7CB33D000CBD89 /* BASelectionistNeuralNetwork_OSXTests.swift */,
+				633D7FE91B7CB33D000CBD89 /* Info.plist */,
+			);
+			path = BASelectionistNeuralNetwork_OSXTests;
+			sourceTree = "<group>";
+		};
+		633D7FF01B7CB378000CBD89 /* CrossPlatformClasses */ = {
+			isa = PBXGroup;
+			children = (
+				631E2D911BF129BC009BEF9B /* Protocols */,
+				631E2D761BF129BC009BEF9B /* MajorComponents */,
+				631E2D6D1BF129BC009BEF9B /* Internals */,
+			);
+			name = CrossPlatformClasses;
+			path = CrossPlatform/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		633D7FF21B7CB3C8000CBD89 /* CrossPlatformTests */ = {
+			isa = PBXGroup;
+			children = (
+				631D258A1BAF413500073490 /* TestNetworkContainers.swift */,
+				638CC88D1BE4021600254B2C /* TestCalculations.swift */,
+				63CE21B41D4C066700A09892 /* TestArchiving.swift */,
+				63476C8E1D3D3BFA00CB561E /* BGL2015 */,
+			);
+			name = CrossPlatformTests;
+			path = CrossPlatform/Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		63476C8E1D3D3BFA00CB561E /* BGL2015 */ = {
+			isa = PBXGroup;
+			children = (
+				63476C971D3D3C3400CB561E /* BGL2015Tests.swift */,
+				63476C8F1D3D3BFA00CB561E /* Organism.swift */,
+				63476C901D3D3BFA00CB561E /* SessionStepData.swift */,
+				63476C911D3D3BFA00CB561E /* SessionSummaryData.swift */,
+				63476C921D3D3BFA00CB561E /* TrialsLooper.swift */,
+			);
+			path = BGL2015;
+			sourceTree = "<group>";
+		};
+		6352686D1C971E9700CEBBFE /* BaseNeurons */ = {
+			isa = PBXGroup;
+			children = (
+				6352686E1C971E9700CEBBFE /* Axon.swift */,
+				635268711C971E9700CEBBFE /* Neuron.swift */,
+				6352686F1C971E9700CEBBFE /* ComputationalNode.swift */,
+				635268721C971E9700CEBBFE /* OperantNeuron.swift */,
+				635268701C971E9700CEBBFE /* Interneuron.swift */,
+				635268731C971E9700CEBBFE /* RespondentNeuron.swift */,
+			);
+			path = BaseNeurons;
+			sourceTree = "<group>";
+		};
+		635268741C971E9700CEBBFE /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				635268751C971E9700CEBBFE /* FindIdentifiedNode.swift */,
+				6325F0E01D881FEB00D41E6E /* NeuralRegion.swift */,
+				6325F0E51D88205F00D41E6E /* NeuralArea.swift */,
+				6325F0EA1D883F1000D41E6E /* NeuralMultiLayerArea.swift */,
+				6325F0EF1D88757A00D41E6E /* NeuralSingleLayerArea.swift */,
+				6359B90B1D40F630009EAB5F /* NeuralLayer.swift */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
+		635268771C971E9700CEBBFE /* DiscrepancyNeurons */ = {
+			isa = PBXGroup;
+			children = (
+				635268781C971E9700CEBBFE /* DopaminergicNeuron.swift */,
+				635268791C971E9700CEBBFE /* HippocampalNeuron.swift */,
+			);
+			path = DiscrepancyNeurons;
+			sourceTree = "<group>";
+		};
+		6352687A1C971E9700CEBBFE /* Effector */ = {
+			isa = PBXGroup;
+			children = (
+				6352687C1C971E9700CEBBFE /* Effector.swift */,
+				6352687B1C971E9700CEBBFE /* BinaryEffector.swift */,
+			);
+			path = Effector;
+			sourceTree = "<group>";
+		};
+		6352687D1C971E9700CEBBFE /* MotorNeurons */ = {
+			isa = PBXGroup;
+			children = (
+				6352687E1C971E9700CEBBFE /* MotorInterneuron.swift */,
+				6352687F1C971E9700CEBBFE /* MotorOutputNeuron.swift */,
+			);
+			path = MotorNeurons;
+			sourceTree = "<group>";
+		};
+		635268801C971E9700CEBBFE /* Sensor */ = {
+			isa = PBXGroup;
+			children = (
+				635268821C971E9700CEBBFE /* Sensor.swift */,
+				635268811C971E9700CEBBFE /* BinarySensor.swift */,
+			);
+			path = Sensor;
+			sourceTree = "<group>";
+		};
+		635268831C971E9700CEBBFE /* SensoryNeurons */ = {
+			isa = PBXGroup;
+			children = (
+				635268851C971E9700CEBBFE /* SensoryInputNeuron.swift */,
+				635268841C971E9700CEBBFE /* RespondentSensoryInputNeuron.swift */,
+				635268861C971E9700CEBBFE /* SensoryInterneuron.swift */,
+				635268871C971E9700CEBBFE /* SensoryTestInput.swift */,
+			);
+			path = SensoryNeurons;
+			sourceTree = "<group>";
+		};
+		63E88F521C88686E00D8E5D2 /* Motor */ = {
+			isa = PBXGroup;
+			children = (
+				63E88F581C88686E00D8E5D2 /* VentralTegmentalArea.swift */,
+				63E88FB01C886A4600D8E5D2 /* DopaminergicUnit.swift */,
+				63E88FAB1C886A4600D8E5D2 /* Associative */,
+				63E88FB11C886A4600D8E5D2 /* Output */,
+				63E88FFE1C886B4800D8E5D2 /* Effectors */,
+			);
+			path = Motor;
+			sourceTree = "<group>";
+		};
+		63E88F711C88688100D8E5D2 /* Sensory */ = {
+			isa = PBXGroup;
+			children = (
+				63E88F721C88688100D8E5D2 /* Hippocampus.swift */,
+				63E88FF31C886AC600D8E5D2 /* HippocampalUnit.swift */,
+				63E88FF81C886B3200D8E5D2 /* Sensors */,
+				63E88F941C8868F000D8E5D2 /* Input */,
+				63E88F901C8868F000D8E5D2 /* Associative */,
+			);
+			path = Sensory;
+			sourceTree = "<group>";
+		};
+		63E88F901C8868F000D8E5D2 /* Associative */ = {
+			isa = PBXGroup;
+			children = (
+				63E88F931C8868F000D8E5D2 /* SensoryAssociationRegion.swift */,
+				63E88F911C8868F000D8E5D2 /* SensoryAssociationArea.swift */,
+				63E88F921C8868F000D8E5D2 /* SensoryAssociationLayer.swift */,
+				63E88FEE1C886A9700D8E5D2 /* SensoryAssociativeNeuron.swift */,
+			);
+			path = Associative;
+			sourceTree = "<group>";
+		};
+		63E88F941C8868F000D8E5D2 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				63E88F961C8868F000D8E5D2 /* SensoryInputRegion.swift */,
+				63E88F951C8868F000D8E5D2 /* SensoryInputArea.swift */,
+				63E88FD61C886A8D00D8E5D2 /* OperantInputNeuron.swift */,
+				63E88FD71C886A8D00D8E5D2 /* OperantTestInput.swift */,
+				63E88FD81C886A8D00D8E5D2 /* PavlovianInputNeuron.swift */,
+				63E88FD91C886A8D00D8E5D2 /* PavlovianTestInput.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		63E88FAB1C886A4600D8E5D2 /* Associative */ = {
+			isa = PBXGroup;
+			children = (
+				63E88FAE1C886A4600D8E5D2 /* MotorAssociationRegion.swift */,
+				63E88FAC1C886A4600D8E5D2 /* MotorAssociationArea.swift */,
+				63E88FAD1C886A4600D8E5D2 /* MotorAssociationLayer.swift */,
+				63E88FAF1C886A4600D8E5D2 /* MotorAssociativeNeuron.swift */,
+			);
+			path = Associative;
+			sourceTree = "<group>";
+		};
+		63E88FB11C886A4600D8E5D2 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				63E88FB41C886A4600D8E5D2 /* MotorOutputRegion.swift */,
+				63E88FB31C886A4600D8E5D2 /* MotorOutputArea.swift */,
+				63E88FB21C886A4600D8E5D2 /* MotorNeuron.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		63E88FF81C886B3200D8E5D2 /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				63E8900E1C88ACCA00D8E5D2 /* SensorRegion.swift */,
+				63E890091C88A38400D8E5D2 /* SensorArea.swift */,
+				63E88FF91C886B3200D8E5D2 /* SimpleBinarySensor.swift */,
+			);
+			path = Sensors;
+			sourceTree = "<group>";
+		};
+		63E88FFE1C886B4800D8E5D2 /* Effectors */ = {
+			isa = PBXGroup;
+			children = (
+				63E8901D1C89C3D500D8E5D2 /* EffectorRegion.swift */,
+				63E890181C89C09B00D8E5D2 /* EffectorArea.swift */,
+				63E890221C89C45500D8E5D2 /* SimpleBinaryEffector.swift */,
+			);
+			path = Effectors;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		633D7FB71B7CB21A000CBD89 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633D7FBE1B7CB21A000CBD89 /* BASelectionistNeuralNetwork.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633D7FD61B7CB33D000CBD89 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633D7FDC1B7CB33D000CBD89 /* BASelectionistNeuralNetwork_OSX.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		633D7FB91B7CB21A000CBD89 /* BASelectionistNeuralNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 633D7FCE1B7CB21A000CBD89 /* Build configuration list for PBXNativeTarget "BASelectionistNeuralNetwork" */;
+			buildPhases = (
+				633D7FB51B7CB21A000CBD89 /* Sources */,
+				633D7FB61B7CB21A000CBD89 /* Frameworks */,
+				633D7FB71B7CB21A000CBD89 /* Headers */,
+				633D7FB81B7CB21A000CBD89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BASelectionistNeuralNetwork;
+			productName = BASelectionistNeuralNetwork;
+			productReference = 633D7FBA1B7CB21A000CBD89 /* BASelectionistNeuralNetwork.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		633D7FC31B7CB21A000CBD89 /* BASelectionistNeuralNetworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 633D7FD11B7CB21A000CBD89 /* Build configuration list for PBXNativeTarget "BASelectionistNeuralNetworkTests" */;
+			buildPhases = (
+				633D7FC01B7CB21A000CBD89 /* Sources */,
+				633D7FC11B7CB21A000CBD89 /* Frameworks */,
+				633D7FC21B7CB21A000CBD89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				633D7FC71B7CB21A000CBD89 /* PBXTargetDependency */,
+			);
+			name = BASelectionistNeuralNetworkTests;
+			productName = BASelectionistNeuralNetworkTests;
+			productReference = 633D7FC41B7CB21A000CBD89 /* BASelectionistNeuralNetworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		633D7FD81B7CB33D000CBD89 /* BASelectionistNeuralNetwork_OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 633D7FEA1B7CB33D000CBD89 /* Build configuration list for PBXNativeTarget "BASelectionistNeuralNetwork_OSX" */;
+			buildPhases = (
+				633D7FD41B7CB33D000CBD89 /* Sources */,
+				633D7FD51B7CB33D000CBD89 /* Frameworks */,
+				633D7FD61B7CB33D000CBD89 /* Headers */,
+				633D7FD71B7CB33D000CBD89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BASelectionistNeuralNetwork_OSX;
+			productName = BASelectionistNeuralNetwork_OSX;
+			productReference = 633D7FD91B7CB33D000CBD89 /* BASelectionistNeuralNetwork.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		633D7FE11B7CB33D000CBD89 /* BASelectionistNeuralNetwork_OSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 633D7FED1B7CB33D000CBD89 /* Build configuration list for PBXNativeTarget "BASelectionistNeuralNetwork_OSXTests" */;
+			buildPhases = (
+				633D7FDE1B7CB33D000CBD89 /* Sources */,
+				633D7FDF1B7CB33D000CBD89 /* Frameworks */,
+				633D7FE01B7CB33D000CBD89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				633D7FE51B7CB33D000CBD89 /* PBXTargetDependency */,
+			);
+			name = BASelectionistNeuralNetwork_OSXTests;
+			productName = BASelectionistNeuralNetwork_OSXTests;
+			productReference = 633D7FE21B7CB33D000CBD89 /* BASelectionistNeuralNetwork_OSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		633D7FB11B7CB21A000CBD89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Tom Donaldson";
+				TargetAttributes = {
+					633D7FB91B7CB21A000CBD89 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					633D7FC31B7CB21A000CBD89 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					633D7FD81B7CB33D000CBD89 = {
+						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0810;
+					};
+					633D7FE11B7CB33D000CBD89 = {
+						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0810;
+					};
+				};
+			};
+			buildConfigurationList = 633D7FB41B7CB21A000CBD89 /* Build configuration list for PBXProject "BASelectionistNeuralNetwork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 633D7FB01B7CB21A000CBD89;
+			productRefGroup = 633D7FBB1B7CB21A000CBD89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				633D7FB91B7CB21A000CBD89 /* BASelectionistNeuralNetwork */,
+				633D7FC31B7CB21A000CBD89 /* BASelectionistNeuralNetworkTests */,
+				633D7FD81B7CB33D000CBD89 /* BASelectionistNeuralNetwork_OSX */,
+				633D7FE11B7CB33D000CBD89 /* BASelectionistNeuralNetwork_OSXTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		633D7FB81B7CB21A000CBD89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E615401C0CA47000CB31AB /* BGL2015SessionStateMachine.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633D7FC21B7CB21A000CBD89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E615411C0CA47000CB31AB /* BGL2015SessionStateMachine.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633D7FD71B7CB33D000CBD89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E615421C0CA47000CB31AB /* BGL2015SessionStateMachine.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633D7FE01B7CB33D000CBD89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E615431C0CA47000CB31AB /* BGL2015SessionStateMachine.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		633D7FB51B7CB21A000CBD89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E890231C89C45500D8E5D2 /* SimpleBinaryEffector.swift in Sources */,
+				63E88FDE1C886A8D00D8E5D2 /* OperantInputNeuron.swift in Sources */,
+				635268A81C971E9700CEBBFE /* DopaminergicNeuron.swift in Sources */,
+				631E2DE41BF129BC009BEF9B /* ReactivationThreshold.swift in Sources */,
+				63E88F9B1C8868F000D8E5D2 /* SensoryAssociationLayer.swift in Sources */,
+				631E2DC01BF129BC009BEF9B /* ActivationSettings.swift in Sources */,
+				63E88F971C8868F000D8E5D2 /* SensoryAssociationArea.swift in Sources */,
+				63E88FFA1C886B3200D8E5D2 /* SimpleBinarySensor.swift in Sources */,
+				63E88FEA1C886A8D00D8E5D2 /* PavlovianTestInput.swift in Sources */,
+				63E88FBD1C886A4600D8E5D2 /* MotorAssociationRegion.swift in Sources */,
+				635268901C971E9700CEBBFE /* Interneuron.swift in Sources */,
+				63E890191C89C09B00D8E5D2 /* EffectorArea.swift in Sources */,
+				63E88FB51C886A4600D8E5D2 /* MotorAssociationArea.swift in Sources */,
+				63E890281C89E31D00D8E5D2 /* NetworkUpdater.swift in Sources */,
+				631E2DBC1BF129BC009BEF9B /* WeightedConnections.swift in Sources */,
+				635268B01C971E9700CEBBFE /* BinaryEffector.swift in Sources */,
+				631E2DB01BF129BC009BEF9B /* RespondentConnections.swift in Sources */,
+				63B12DB01DB8E27F00870B6D /* Stimulation.swift in Sources */,
+				6352689C1C971E9700CEBBFE /* RespondentNeuron.swift in Sources */,
+				631E2DC81BF129BC009BEF9B /* LearningSettings.swift in Sources */,
+				63E8902D1C8A2FFD00D8E5D2 /* RandomizedContinuousPropogationUpdater.swift in Sources */,
+				6352688C1C971E9700CEBBFE /* ComputationalNode.swift in Sources */,
+				635268B81C971E9700CEBBFE /* MotorInterneuron.swift in Sources */,
+				63E88FC11C886A4600D8E5D2 /* MotorAssociativeNeuron.swift in Sources */,
+				63E88FF41C886AC600D8E5D2 /* HippocampalUnit.swift in Sources */,
+				631E2DAC1BF129BC009BEF9B /* OperantNeuronBody.swift in Sources */,
+				631E2DA81BF129BC009BEF9B /* OperantConnections.swift in Sources */,
+				63E88FE21C886A8D00D8E5D2 /* OperantTestInput.swift in Sources */,
+				63B12DBA1DB8E78900870B6D /* ConnectionAttributes.swift in Sources */,
+				631E2DE01BF129BC009BEF9B /* Network.swift in Sources */,
+				63E88FCD1C886A4600D8E5D2 /* MotorOutputArea.swift in Sources */,
+				631E2DB41BF129BC009BEF9B /* RespondentNeuronBody.swift in Sources */,
+				635268981C971E9700CEBBFE /* OperantNeuron.swift in Sources */,
+				6325F0DC1D81C80500D41E6E /* ActivatableNode.swift in Sources */,
+				63E88F6D1C88686E00D8E5D2 /* VentralTegmentalArea.swift in Sources */,
+				635268941C971E9700CEBBFE /* Neuron.swift in Sources */,
+				6361B8251CB52AE300DA6B53 /* NodeInfo.swift in Sources */,
+				635268C01C971E9700CEBBFE /* BinarySensor.swift in Sources */,
+				63E8900F1C88ACCA00D8E5D2 /* SensorRegion.swift in Sources */,
+				63E88FB91C886A4600D8E5D2 /* MotorAssociationLayer.swift in Sources */,
+				635268CC1C971E9700CEBBFE /* SensoryInputNeuron.swift in Sources */,
+				63E88FE61C886A8D00D8E5D2 /* PavlovianInputNeuron.swift in Sources */,
+				63B12DB21DB8E35200870B6D /* Learning.swift in Sources */,
+				631E2DB81BF129BC009BEF9B /* UnweightedConnections.swift in Sources */,
+				635268C41C971E9700CEBBFE /* Sensor.swift in Sources */,
+				635268B41C971E9700CEBBFE /* Effector.swift in Sources */,
+				635268D01C971E9700CEBBFE /* SensoryInterneuron.swift in Sources */,
+				6325F0E61D88205F00D41E6E /* NeuralArea.swift in Sources */,
+				635268C81C971E9700CEBBFE /* RespondentSensoryInputNeuron.swift in Sources */,
+				6359B90C1D40F630009EAB5F /* NeuralLayer.swift in Sources */,
+				635268A01C971E9700CEBBFE /* FindIdentifiedNode.swift in Sources */,
+				63E88F9F1C8868F000D8E5D2 /* SensoryAssociationRegion.swift in Sources */,
+				63E88FC51C886A4600D8E5D2 /* DopaminergicUnit.swift in Sources */,
+				63E88FA71C8868F000D8E5D2 /* SensoryInputRegion.swift in Sources */,
+				63E88FA31C8868F000D8E5D2 /* SensoryInputArea.swift in Sources */,
+				635268BC1C971E9700CEBBFE /* MotorOutputNeuron.swift in Sources */,
+				63E8901E1C89C3D500D8E5D2 /* EffectorRegion.swift in Sources */,
+				635268881C971E9700CEBBFE /* Axon.swift in Sources */,
+				6325F0E11D881FEB00D41E6E /* NeuralRegion.swift in Sources */,
+				63E890001C88856D00D8E5D2 /* Node.swift in Sources */,
+				63E88F781C88688100D8E5D2 /* Hippocampus.swift in Sources */,
+				6325F0F01D88757A00D41E6E /* NeuralSingleLayerArea.swift in Sources */,
+				6325F0EB1D883F1000D41E6E /* NeuralMultiLayerArea.swift in Sources */,
+				63E8900A1C88A38400D8E5D2 /* SensorArea.swift in Sources */,
+				63E88FD11C886A4600D8E5D2 /* MotorOutputRegion.swift in Sources */,
+				631E2DA01BF129BC009BEF9B /* ComputationalNodeBody.swift in Sources */,
+				63C4D0B41D7DD3F800C57C8B /* Activatable.swift in Sources */,
+				631E2DA41BF129BC009BEF9B /* NodeBody.swift in Sources */,
+				635268D41C971E9700CEBBFE /* SensoryTestInput.swift in Sources */,
+				63E88FEF1C886A9700D8E5D2 /* SensoryAssociativeNeuron.swift in Sources */,
+				63E88FC91C886A4600D8E5D2 /* MotorNeuron.swift in Sources */,
+				635268AC1C971E9700CEBBFE /* HippocampalNeuron.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633D7FC01B7CB21A000CBD89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E88FBE1C886A4600D8E5D2 /* MotorAssociationRegion.swift in Sources */,
+				63E88FF51C886AC600D8E5D2 /* HippocampalUnit.swift in Sources */,
+				635268CD1C971E9700CEBBFE /* SensoryInputNeuron.swift in Sources */,
+				63E88FFB1C886B3200D8E5D2 /* SimpleBinarySensor.swift in Sources */,
+				635268911C971E9700CEBBFE /* Interneuron.swift in Sources */,
+				63476C941D3D3BFA00CB561E /* SessionStepData.swift in Sources */,
+				6352688D1C971E9700CEBBFE /* ComputationalNode.swift in Sources */,
+				635268C11C971E9700CEBBFE /* BinarySensor.swift in Sources */,
+				63E8901A1C89C09B00D8E5D2 /* EffectorArea.swift in Sources */,
+				635268BD1C971E9700CEBBFE /* MotorOutputNeuron.swift in Sources */,
+				635268C51C971E9700CEBBFE /* Sensor.swift in Sources */,
+				63E88F791C88688100D8E5D2 /* Hippocampus.swift in Sources */,
+				63E88FC21C886A4600D8E5D2 /* MotorAssociativeNeuron.swift in Sources */,
+				63E88FE31C886A8D00D8E5D2 /* OperantTestInput.swift in Sources */,
+				63476C981D3D3C3400CB561E /* BGL2015Tests.swift in Sources */,
+				63E88FDF1C886A8D00D8E5D2 /* OperantInputNeuron.swift in Sources */,
+				631E2DE51BF129BC009BEF9B /* ReactivationThreshold.swift in Sources */,
+				63E88F6E1C88686E00D8E5D2 /* VentralTegmentalArea.swift in Sources */,
+				63E88FCA1C886A4600D8E5D2 /* MotorNeuron.swift in Sources */,
+				631E2DE11BF129BC009BEF9B /* Network.swift in Sources */,
+				6359B90E1D410F45009EAB5F /* NeuralLayer.swift in Sources */,
+				63E88FA81C8868F000D8E5D2 /* SensoryInputRegion.swift in Sources */,
+				63E88FA01C8868F000D8E5D2 /* SensoryAssociationRegion.swift in Sources */,
+				63E88FCE1C886A4600D8E5D2 /* MotorOutputArea.swift in Sources */,
+				63E890291C89E31D00D8E5D2 /* NetworkUpdater.swift in Sources */,
+				635268A11C971E9700CEBBFE /* FindIdentifiedNode.swift in Sources */,
+				635268AD1C971E9700CEBBFE /* HippocampalNeuron.swift in Sources */,
+				631E2DC11BF129BC009BEF9B /* ActivationSettings.swift in Sources */,
+				6325F0E71D88205F00D41E6E /* NeuralArea.swift in Sources */,
+				635268B51C971E9700CEBBFE /* Effector.swift in Sources */,
+				635268991C971E9700CEBBFE /* OperantNeuron.swift in Sources */,
+				63E88FE71C886A8D00D8E5D2 /* PavlovianInputNeuron.swift in Sources */,
+				63C4D0B71D7DD5C200C57C8B /* Activatable.swift in Sources */,
+				63E88FBA1C886A4600D8E5D2 /* MotorAssociationLayer.swift in Sources */,
+				63E88FD21C886A4600D8E5D2 /* MotorOutputRegion.swift in Sources */,
+				631E2DB51BF129BC009BEF9B /* RespondentNeuronBody.swift in Sources */,
+				63E8900B1C88A38400D8E5D2 /* SensorArea.swift in Sources */,
+				63476C951D3D3BFA00CB561E /* SessionSummaryData.swift in Sources */,
+				635268B91C971E9700CEBBFE /* MotorInterneuron.swift in Sources */,
+				631E2DA51BF129BC009BEF9B /* NodeBody.swift in Sources */,
+				6352689D1C971E9700CEBBFE /* RespondentNeuron.swift in Sources */,
+				63E88FA41C8868F000D8E5D2 /* SensoryInputArea.swift in Sources */,
+				635268D11C971E9700CEBBFE /* SensoryInterneuron.swift in Sources */,
+				631E2DA11BF129BC009BEF9B /* ComputationalNodeBody.swift in Sources */,
+				6325F0DD1D81C80500D41E6E /* ActivatableNode.swift in Sources */,
+				635268B11C971E9700CEBBFE /* BinaryEffector.swift in Sources */,
+				63E88F9C1C8868F000D8E5D2 /* SensoryAssociationLayer.swift in Sources */,
+				638CC88E1BE4021600254B2C /* TestCalculations.swift in Sources */,
+				6325F0E21D881FEB00D41E6E /* NeuralRegion.swift in Sources */,
+				631E2DA91BF129BC009BEF9B /* OperantConnections.swift in Sources */,
+				631E2DB11BF129BC009BEF9B /* RespondentConnections.swift in Sources */,
+				63E890101C88ACCA00D8E5D2 /* SensorRegion.swift in Sources */,
+				63E890241C89C45500D8E5D2 /* SimpleBinaryEffector.swift in Sources */,
+				631E2DAD1BF129BC009BEF9B /* OperantNeuronBody.swift in Sources */,
+				631E2DBD1BF129BC009BEF9B /* WeightedConnections.swift in Sources */,
+				63E8901F1C89C3D500D8E5D2 /* EffectorRegion.swift in Sources */,
+				63E890011C88856D00D8E5D2 /* Node.swift in Sources */,
+				63B12DB81DB8E4CA00870B6D /* Learning.swift in Sources */,
+				631D258B1BAF413500073490 /* TestNetworkContainers.swift in Sources */,
+				6361B8261CB52AE300DA6B53 /* NodeInfo.swift in Sources */,
+				63E8902E1C8A2FFD00D8E5D2 /* RandomizedContinuousPropogationUpdater.swift in Sources */,
+				63476C961D3D3BFA00CB561E /* TrialsLooper.swift in Sources */,
+				63E88F981C8868F000D8E5D2 /* SensoryAssociationArea.swift in Sources */,
+				635268891C971E9700CEBBFE /* Axon.swift in Sources */,
+				63E88FF01C886A9700D8E5D2 /* SensoryAssociativeNeuron.swift in Sources */,
+				631E2DB91BF129BC009BEF9B /* UnweightedConnections.swift in Sources */,
+				635268C91C971E9700CEBBFE /* RespondentSensoryInputNeuron.swift in Sources */,
+				631E2DC91BF129BC009BEF9B /* LearningSettings.swift in Sources */,
+				635268A91C971E9700CEBBFE /* DopaminergicNeuron.swift in Sources */,
+				633D7FCA1B7CB21A000CBD89 /* BASelectionistNeuralNetworkTests.swift in Sources */,
+				63B12DB61DB8E4C300870B6D /* Stimulation.swift in Sources */,
+				63E88FB61C886A4600D8E5D2 /* MotorAssociationArea.swift in Sources */,
+				635268D51C971E9700CEBBFE /* SensoryTestInput.swift in Sources */,
+				63B12DBD1DB8ECB900870B6D /* ConnectionAttributes.swift in Sources */,
+				63E88FEB1C886A8D00D8E5D2 /* PavlovianTestInput.swift in Sources */,
+				63CE21B51D4C066700A09892 /* TestArchiving.swift in Sources */,
+				6325F0F11D88757A00D41E6E /* NeuralSingleLayerArea.swift in Sources */,
+				6325F0EC1D883F1000D41E6E /* NeuralMultiLayerArea.swift in Sources */,
+				63E88FC61C886A4600D8E5D2 /* DopaminergicUnit.swift in Sources */,
+				635268951C971E9700CEBBFE /* Neuron.swift in Sources */,
+				63476C931D3D3BFA00CB561E /* Organism.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633D7FD41B7CB33D000CBD89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E890251C89C45500D8E5D2 /* SimpleBinaryEffector.swift in Sources */,
+				63E88FE01C886A8D00D8E5D2 /* OperantInputNeuron.swift in Sources */,
+				635268AA1C971E9700CEBBFE /* DopaminergicNeuron.swift in Sources */,
+				631E2DE61BF129BC009BEF9B /* ReactivationThreshold.swift in Sources */,
+				63E88F9D1C8868F000D8E5D2 /* SensoryAssociationLayer.swift in Sources */,
+				631E2DC21BF129BC009BEF9B /* ActivationSettings.swift in Sources */,
+				63E88F991C8868F000D8E5D2 /* SensoryAssociationArea.swift in Sources */,
+				63E88FFC1C886B3200D8E5D2 /* SimpleBinarySensor.swift in Sources */,
+				63E88FEC1C886A8D00D8E5D2 /* PavlovianTestInput.swift in Sources */,
+				63E88FBF1C886A4600D8E5D2 /* MotorAssociationRegion.swift in Sources */,
+				635268921C971E9700CEBBFE /* Interneuron.swift in Sources */,
+				63E8901B1C89C09B00D8E5D2 /* EffectorArea.swift in Sources */,
+				63E88FB71C886A4600D8E5D2 /* MotorAssociationArea.swift in Sources */,
+				63E8902A1C89E31D00D8E5D2 /* NetworkUpdater.swift in Sources */,
+				631E2DBE1BF129BC009BEF9B /* WeightedConnections.swift in Sources */,
+				635268B21C971E9700CEBBFE /* BinaryEffector.swift in Sources */,
+				631E2DB21BF129BC009BEF9B /* RespondentConnections.swift in Sources */,
+				63B12DB31DB8E45500870B6D /* Stimulation.swift in Sources */,
+				6352689E1C971E9700CEBBFE /* RespondentNeuron.swift in Sources */,
+				631E2DCA1BF129BC009BEF9B /* LearningSettings.swift in Sources */,
+				63E8902F1C8A2FFD00D8E5D2 /* RandomizedContinuousPropogationUpdater.swift in Sources */,
+				6352688E1C971E9700CEBBFE /* ComputationalNode.swift in Sources */,
+				635268BA1C971E9700CEBBFE /* MotorInterneuron.swift in Sources */,
+				63E88FC31C886A4600D8E5D2 /* MotorAssociativeNeuron.swift in Sources */,
+				63E88FF61C886AC600D8E5D2 /* HippocampalUnit.swift in Sources */,
+				631E2DAE1BF129BC009BEF9B /* OperantNeuronBody.swift in Sources */,
+				631E2DAA1BF129BC009BEF9B /* OperantConnections.swift in Sources */,
+				63E88FE41C886A8D00D8E5D2 /* OperantTestInput.swift in Sources */,
+				63B12DBC1DB8ECB900870B6D /* ConnectionAttributes.swift in Sources */,
+				631E2DE21BF129BC009BEF9B /* Network.swift in Sources */,
+				63E88FCF1C886A4600D8E5D2 /* MotorOutputArea.swift in Sources */,
+				631E2DB61BF129BC009BEF9B /* RespondentNeuronBody.swift in Sources */,
+				6352689A1C971E9700CEBBFE /* OperantNeuron.swift in Sources */,
+				6325F0DE1D81C80500D41E6E /* ActivatableNode.swift in Sources */,
+				63E88F6F1C88686E00D8E5D2 /* VentralTegmentalArea.swift in Sources */,
+				635268961C971E9700CEBBFE /* Neuron.swift in Sources */,
+				6361B8271CB52AE300DA6B53 /* NodeInfo.swift in Sources */,
+				635268C21C971E9700CEBBFE /* BinarySensor.swift in Sources */,
+				63E890111C88ACCA00D8E5D2 /* SensorRegion.swift in Sources */,
+				63E88FBB1C886A4600D8E5D2 /* MotorAssociationLayer.swift in Sources */,
+				635268CE1C971E9700CEBBFE /* SensoryInputNeuron.swift in Sources */,
+				63E88FE81C886A8D00D8E5D2 /* PavlovianInputNeuron.swift in Sources */,
+				63B12DB41DB8E45C00870B6D /* Learning.swift in Sources */,
+				631E2DBA1BF129BC009BEF9B /* UnweightedConnections.swift in Sources */,
+				635268C61C971E9700CEBBFE /* Sensor.swift in Sources */,
+				635268B61C971E9700CEBBFE /* Effector.swift in Sources */,
+				635268D21C971E9700CEBBFE /* SensoryInterneuron.swift in Sources */,
+				6325F0E81D88205F00D41E6E /* NeuralArea.swift in Sources */,
+				635268CA1C971E9700CEBBFE /* RespondentSensoryInputNeuron.swift in Sources */,
+				6359B90D1D40F654009EAB5F /* NeuralLayer.swift in Sources */,
+				635268A21C971E9700CEBBFE /* FindIdentifiedNode.swift in Sources */,
+				63E88FA11C8868F000D8E5D2 /* SensoryAssociationRegion.swift in Sources */,
+				63E88FC71C886A4600D8E5D2 /* DopaminergicUnit.swift in Sources */,
+				63E88FA91C8868F000D8E5D2 /* SensoryInputRegion.swift in Sources */,
+				63E88FA51C8868F000D8E5D2 /* SensoryInputArea.swift in Sources */,
+				635268BE1C971E9700CEBBFE /* MotorOutputNeuron.swift in Sources */,
+				63E890201C89C3D500D8E5D2 /* EffectorRegion.swift in Sources */,
+				6352688A1C971E9700CEBBFE /* Axon.swift in Sources */,
+				6325F0E31D881FEB00D41E6E /* NeuralRegion.swift in Sources */,
+				63E890021C88856D00D8E5D2 /* Node.swift in Sources */,
+				63E88F7A1C88688100D8E5D2 /* Hippocampus.swift in Sources */,
+				6325F0F21D88757A00D41E6E /* NeuralSingleLayerArea.swift in Sources */,
+				6325F0ED1D883F1000D41E6E /* NeuralMultiLayerArea.swift in Sources */,
+				63E8900C1C88A38400D8E5D2 /* SensorArea.swift in Sources */,
+				63E88FD31C886A4600D8E5D2 /* MotorOutputRegion.swift in Sources */,
+				631E2DA21BF129BC009BEF9B /* ComputationalNodeBody.swift in Sources */,
+				63C4D0B51D7DD47A00C57C8B /* Activatable.swift in Sources */,
+				631E2DA61BF129BC009BEF9B /* NodeBody.swift in Sources */,
+				635268D61C971E9700CEBBFE /* SensoryTestInput.swift in Sources */,
+				63E88FF11C886A9700D8E5D2 /* SensoryAssociativeNeuron.swift in Sources */,
+				63E88FCB1C886A4600D8E5D2 /* MotorNeuron.swift in Sources */,
+				635268AE1C971E9700CEBBFE /* HippocampalNeuron.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633D7FDE1B7CB33D000CBD89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E88FC01C886A4600D8E5D2 /* MotorAssociationRegion.swift in Sources */,
+				63E88FF71C886AC600D8E5D2 /* HippocampalUnit.swift in Sources */,
+				635268CF1C971E9700CEBBFE /* SensoryInputNeuron.swift in Sources */,
+				63E88FFD1C886B3200D8E5D2 /* SimpleBinarySensor.swift in Sources */,
+				63476C991D3D3C3400CB561E /* BGL2015Tests.swift in Sources */,
+				635268931C971E9700CEBBFE /* Interneuron.swift in Sources */,
+				6352688F1C971E9700CEBBFE /* ComputationalNode.swift in Sources */,
+				635268C31C971E9700CEBBFE /* BinarySensor.swift in Sources */,
+				63E8901C1C89C09B00D8E5D2 /* EffectorArea.swift in Sources */,
+				635268BF1C971E9700CEBBFE /* MotorOutputNeuron.swift in Sources */,
+				635268C71C971E9700CEBBFE /* Sensor.swift in Sources */,
+				63476C9B1D3D3D7100CB561E /* SessionStepData.swift in Sources */,
+				63E88F7B1C88688100D8E5D2 /* Hippocampus.swift in Sources */,
+				63E88FC41C886A4600D8E5D2 /* MotorAssociativeNeuron.swift in Sources */,
+				63E88FE51C886A8D00D8E5D2 /* OperantTestInput.swift in Sources */,
+				63E88FE11C886A8D00D8E5D2 /* OperantInputNeuron.swift in Sources */,
+				631E2DE71BF129BC009BEF9B /* ReactivationThreshold.swift in Sources */,
+				63476C9A1D3D3D6C00CB561E /* Organism.swift in Sources */,
+				63E88F701C88686E00D8E5D2 /* VentralTegmentalArea.swift in Sources */,
+				63E88FCC1C886A4600D8E5D2 /* MotorNeuron.swift in Sources */,
+				6359B90F1D410F46009EAB5F /* NeuralLayer.swift in Sources */,
+				631E2DE31BF129BC009BEF9B /* Network.swift in Sources */,
+				63E88FAA1C8868F000D8E5D2 /* SensoryInputRegion.swift in Sources */,
+				63E88FA21C8868F000D8E5D2 /* SensoryAssociationRegion.swift in Sources */,
+				63E88FD01C886A4600D8E5D2 /* MotorOutputArea.swift in Sources */,
+				63E8902B1C89E31D00D8E5D2 /* NetworkUpdater.swift in Sources */,
+				635268A31C971E9700CEBBFE /* FindIdentifiedNode.swift in Sources */,
+				635268AF1C971E9700CEBBFE /* HippocampalNeuron.swift in Sources */,
+				6325F0E91D88205F00D41E6E /* NeuralArea.swift in Sources */,
+				631E2DC31BF129BC009BEF9B /* ActivationSettings.swift in Sources */,
+				635268B71C971E9700CEBBFE /* Effector.swift in Sources */,
+				6352689B1C971E9700CEBBFE /* OperantNeuron.swift in Sources */,
+				63C4D0B61D7DD5C100C57C8B /* Activatable.swift in Sources */,
+				63E88FE91C886A8D00D8E5D2 /* PavlovianInputNeuron.swift in Sources */,
+				63E88FBC1C886A4600D8E5D2 /* MotorAssociationLayer.swift in Sources */,
+				63476C9C1D3D3D7700CB561E /* SessionSummaryData.swift in Sources */,
+				63E88FD41C886A4600D8E5D2 /* MotorOutputRegion.swift in Sources */,
+				631E2DB71BF129BC009BEF9B /* RespondentNeuronBody.swift in Sources */,
+				63E8900D1C88A38400D8E5D2 /* SensorArea.swift in Sources */,
+				635268BB1C971E9700CEBBFE /* MotorInterneuron.swift in Sources */,
+				63476C9D1D3D3D7B00CB561E /* TrialsLooper.swift in Sources */,
+				631E2DA71BF129BC009BEF9B /* NodeBody.swift in Sources */,
+				6352689F1C971E9700CEBBFE /* RespondentNeuron.swift in Sources */,
+				63E88FA61C8868F000D8E5D2 /* SensoryInputArea.swift in Sources */,
+				6325F0DF1D81C80500D41E6E /* ActivatableNode.swift in Sources */,
+				635268D31C971E9700CEBBFE /* SensoryInterneuron.swift in Sources */,
+				631E2DA31BF129BC009BEF9B /* ComputationalNodeBody.swift in Sources */,
+				635268B31C971E9700CEBBFE /* BinaryEffector.swift in Sources */,
+				6325F0E41D881FEB00D41E6E /* NeuralRegion.swift in Sources */,
+				63E88F9E1C8868F000D8E5D2 /* SensoryAssociationLayer.swift in Sources */,
+				638CC88F1BE4021600254B2C /* TestCalculations.swift in Sources */,
+				631E2DAB1BF129BC009BEF9B /* OperantConnections.swift in Sources */,
+				631E2DB31BF129BC009BEF9B /* RespondentConnections.swift in Sources */,
+				63E890121C88ACCA00D8E5D2 /* SensorRegion.swift in Sources */,
+				63E890261C89C45500D8E5D2 /* SimpleBinaryEffector.swift in Sources */,
+				631E2DAF1BF129BC009BEF9B /* OperantNeuronBody.swift in Sources */,
+				631E2DBF1BF129BC009BEF9B /* WeightedConnections.swift in Sources */,
+				63B12DB71DB8E4C900870B6D /* Learning.swift in Sources */,
+				63E890211C89C3D500D8E5D2 /* EffectorRegion.swift in Sources */,
+				63E890031C88856D00D8E5D2 /* Node.swift in Sources */,
+				631D258C1BAF413500073490 /* TestNetworkContainers.swift in Sources */,
+				6361B8281CB52AE300DA6B53 /* NodeInfo.swift in Sources */,
+				63E890301C8A2FFD00D8E5D2 /* RandomizedContinuousPropogationUpdater.swift in Sources */,
+				63E88F9A1C8868F000D8E5D2 /* SensoryAssociationArea.swift in Sources */,
+				6352688B1C971E9700CEBBFE /* Axon.swift in Sources */,
+				63E88FF21C886A9700D8E5D2 /* SensoryAssociativeNeuron.swift in Sources */,
+				631E2DBB1BF129BC009BEF9B /* UnweightedConnections.swift in Sources */,
+				635268CB1C971E9700CEBBFE /* RespondentSensoryInputNeuron.swift in Sources */,
+				631E2DCB1BF129BC009BEF9B /* LearningSettings.swift in Sources */,
+				635268AB1C971E9700CEBBFE /* DopaminergicNeuron.swift in Sources */,
+				63B12DB51DB8E4C200870B6D /* Stimulation.swift in Sources */,
+				633D7FE81B7CB33D000CBD89 /* BASelectionistNeuralNetwork_OSXTests.swift in Sources */,
+				63E88FB81C886A4600D8E5D2 /* MotorAssociationArea.swift in Sources */,
+				63B12DBB1DB8ECB800870B6D /* ConnectionAttributes.swift in Sources */,
+				635268D71C971E9700CEBBFE /* SensoryTestInput.swift in Sources */,
+				63CE21B61D4C066700A09892 /* TestArchiving.swift in Sources */,
+				6325F0F31D88757A00D41E6E /* NeuralSingleLayerArea.swift in Sources */,
+				6325F0EE1D883F1000D41E6E /* NeuralMultiLayerArea.swift in Sources */,
+				63E88FED1C886A8D00D8E5D2 /* PavlovianTestInput.swift in Sources */,
+				63E88FC81C886A4600D8E5D2 /* DopaminergicUnit.swift in Sources */,
+				635268971C971E9700CEBBFE /* Neuron.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		633D7FC71B7CB21A000CBD89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 633D7FB91B7CB21A000CBD89 /* BASelectionistNeuralNetwork */;
+			targetProxy = 633D7FC61B7CB21A000CBD89 /* PBXContainerItemProxy */;
+		};
+		633D7FE51B7CB33D000CBD89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 633D7FD81B7CB33D000CBD89 /* BASelectionistNeuralNetwork_OSX */;
+			targetProxy = 633D7FE41B7CB33D000CBD89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		633D7FCC1B7CB21A000CBD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		633D7FCD1B7CB21A000CBD89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		633D7FCF1B7CB21A000CBD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BASelectionistNeuralNetwork/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.BASimulation.BASelectionistNeuralNetwork;
+				PRODUCT_NAME = BASelectionistNeuralNetwork;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		633D7FD01B7CB21A000CBD89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BASelectionistNeuralNetwork/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.BASimulation.BASelectionistNeuralNetwork;
+				PRODUCT_NAME = BASelectionistNeuralNetwork;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		633D7FD21B7CB21A000CBD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BASelectionistNeuralNetworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.BASimulation.BASelectionistNeuralNetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		633D7FD31B7CB21A000CBD89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BASelectionistNeuralNetworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.BASimulation.BASelectionistNeuralNetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		633D7FEB1B7CB33D000CBD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = BASelectionistNeuralNetwork_OSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.BASimulation.BASelectionistNeuralNetwork-OSX";
+				PRODUCT_NAME = BASelectionistNeuralNetwork;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		633D7FEC1B7CB33D000CBD89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = BASelectionistNeuralNetwork_OSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.BASimulation.BASelectionistNeuralNetwork-OSX";
+				PRODUCT_NAME = BASelectionistNeuralNetwork;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		633D7FEE1B7CB33D000CBD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BASelectionistNeuralNetwork_OSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.BASimulation.BASelectionistNeuralNetwork-OSXTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		633D7FEF1B7CB33D000CBD89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BASelectionistNeuralNetwork_OSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.BASimulation.BASelectionistNeuralNetwork-OSXTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		633D7FB41B7CB21A000CBD89 /* Build configuration list for PBXProject "BASelectionistNeuralNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633D7FCC1B7CB21A000CBD89 /* Debug */,
+				633D7FCD1B7CB21A000CBD89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		633D7FCE1B7CB21A000CBD89 /* Build configuration list for PBXNativeTarget "BASelectionistNeuralNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633D7FCF1B7CB21A000CBD89 /* Debug */,
+				633D7FD01B7CB21A000CBD89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		633D7FD11B7CB21A000CBD89 /* Build configuration list for PBXNativeTarget "BASelectionistNeuralNetworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633D7FD21B7CB21A000CBD89 /* Debug */,
+				633D7FD31B7CB21A000CBD89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		633D7FEA1B7CB33D000CBD89 /* Build configuration list for PBXNativeTarget "BASelectionistNeuralNetwork_OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633D7FEB1B7CB33D000CBD89 /* Debug */,
+				633D7FEC1B7CB33D000CBD89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		633D7FED1B7CB33D000CBD89 /* Build configuration list for PBXNativeTarget "BASelectionistNeuralNetwork_OSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633D7FEE1B7CB33D000CBD89 /* Debug */,
+				633D7FEF1B7CB33D000CBD89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 633D7FB11B7CB21A000CBD89 /* Project object */;
+}

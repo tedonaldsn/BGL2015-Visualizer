@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TimeStepPlayerController" customModule="BGL2015_OSX" customModuleProvider="target">
+            <connections>
+                <outlet property="autoZoomCheckBox" destination="u9E-uF-fru" id="Yoa-xd-6Lv"/>
+                <outlet property="beginButton" destination="KYb-cy-cXS" id="hba-SG-6LL"/>
+                <outlet property="beginStepField" destination="fWb-vb-c46" id="5eb-C9-DeQ"/>
+                <outlet property="beginTrialField" destination="4fj-ZO-4Pe" id="0hg-zh-odN"/>
+                <outlet property="currentStepField" destination="9UP-zx-U6p" id="GCD-Gp-DaB"/>
+                <outlet property="currentTrialField" destination="9DC-xT-9Bf" id="lxZ-OE-t52"/>
+                <outlet property="endButton" destination="HUr-vU-ge7" id="rcg-aZ-Ust"/>
+                <outlet property="endStepField" destination="Ihf-aV-5P4" id="Q9z-yJ-lcC"/>
+                <outlet property="endTrialField" destination="3Rn-he-fGU" id="Rj4-Hm-v42"/>
+                <outlet property="playPauseButton" destination="G0h-bq-M1u" id="bBn-3r-ZwE"/>
+                <outlet property="repeatPlayButton" destination="u0R-gZ-7Do" id="KFr-nf-5E1"/>
+                <outlet property="resetButton" destination="O0o-tU-LoK" id="WGI-9Y-LwK"/>
+                <outlet property="speedSlider" destination="lA4-eQ-r42" id="5GU-aD-wvC"/>
+                <outlet property="stepScrubber" destination="dRa-gW-nC5" id="Rdk-oj-wxP"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="550" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <slider toolTip="Position in session - slide to change current time step" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dRa-gW-nC5" userLabel="Scrubber">
+                    <rect key="frame" x="0.0" y="66" width="548" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="Lbv-hv-ZE3"/>
+                    </constraints>
+                    <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="100" tickMarkPosition="below" sliderType="linear" id="0WD-S8-Vgx"/>
+                    <connections>
+                        <action selector="stepScrubberAction:" target="-2" id="OVA-CI-rXu"/>
+                    </connections>
+                </slider>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="bng-iY-FSi" userLabel="Begin">
+                    <rect key="frame" x="0.0" y="32" width="138" height="22"/>
+                    <subviews>
+                        <button toolTip="Sets playback starting trial and time step to current location in session" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KYb-cy-cXS" userLabel="Begin Button">
+                            <rect key="frame" x="-6" y="-6" width="75" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="FWv-t2-WCW"/>
+                                <constraint firstAttribute="width" constant="63" id="KId-VE-AHt"/>
+                            </constraints>
+                            <buttonCell key="cell" type="push" title="Begin" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="veI-ST-hT7">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="beginButtonAction:" target="-2" id="RVY-n4-Rft"/>
+                            </connections>
+                        </button>
+                        <textField toolTip="Starting trial for playback" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4fj-ZO-4Pe" userLabel="From Trial Number">
+                            <rect key="frame" x="71" y="1" width="37" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="Pk7-Tw-O35"/>
+                                <constraint firstAttribute="width" constant="37" id="lZU-iA-fcS"/>
+                            </constraints>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" title="1" drawsBackground="YES" id="iia-Bh-bd8">
+                                <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="3" id="MFx-3b-5WF">
+                                    <real key="minimum" value="0.0"/>
+                                    <real key="maximum" value="420"/>
+                                </numberFormatter>
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                            <connections>
+                                <action selector="beginTrialFieldAction:" target="-2" id="K5E-IW-WIb"/>
+                            </connections>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jky-cN-2fT" userLabel="-">
+                            <rect key="frame" x="105" y="5" width="15" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="11" id="BWj-wh-vpx"/>
+                                <constraint firstAttribute="height" constant="17" id="r0R-OP-NZt"/>
+                            </constraints>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="-" id="ISR-pF-sgK">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField toolTip="Starting time step for playback" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fWb-vb-c46" userLabel="From Step Number">
+                            <rect key="frame" x="117" y="1" width="21" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="21" id="IA1-Vf-hBB"/>
+                                <constraint firstAttribute="height" constant="22" id="aZq-j7-KkV"/>
+                            </constraints>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" title="1" drawsBackground="YES" id="93f-09-KIA">
+                                <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="1" id="z7X-df-aVt">
+                                    <real key="minimum" value="0.0"/>
+                                    <real key="maximum" value="5"/>
+                                </numberFormatter>
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                            <connections>
+                                <action selector="beginStepFieldAction:" target="-2" id="8A8-8O-on0"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="jky-cN-2fT" firstAttribute="top" secondItem="bng-iY-FSi" secondAttribute="top" id="0S9-9u-ytP"/>
+                        <constraint firstAttribute="height" constant="22" id="1CT-44-FSt"/>
+                        <constraint firstAttribute="width" constant="138" id="QWM-6u-Yio"/>
+                        <constraint firstItem="KYb-cy-cXS" firstAttribute="leading" secondItem="bng-iY-FSi" secondAttribute="leading" id="VSc-Jl-3jx"/>
+                        <constraint firstItem="jky-cN-2fT" firstAttribute="leading" secondItem="bng-iY-FSi" secondAttribute="leading" constant="107" id="eQd-Cl-3jH"/>
+                        <constraint firstItem="KYb-cy-cXS" firstAttribute="top" secondItem="bng-iY-FSi" secondAttribute="top" id="lrC-ij-ijq"/>
+                        <constraint firstItem="4fj-ZO-4Pe" firstAttribute="top" secondItem="bng-iY-FSi" secondAttribute="top" constant="-1" id="tTS-78-Ebp"/>
+                        <constraint firstItem="fWb-vb-c46" firstAttribute="leading" secondItem="bng-iY-FSi" secondAttribute="leading" constant="117" id="tTd-du-pjj"/>
+                        <constraint firstItem="fWb-vb-c46" firstAttribute="top" secondItem="bng-iY-FSi" secondAttribute="top" constant="-1" id="xkW-Qo-toi"/>
+                        <constraint firstItem="4fj-ZO-4Pe" firstAttribute="leading" secondItem="bng-iY-FSi" secondAttribute="leading" constant="71" id="z73-ZX-DFa"/>
+                    </constraints>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="vcA-Wb-uex" userLabel="Current Location View">
+                    <rect key="frame" x="203" y="33" width="144" height="22"/>
+                    <subviews>
+                        <textField toolTip="Location that is the focus of display. Edit the trial and time step numbers to jump to a new location" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ElS-gz-u33" userLabel="Current Label">
+                            <rect key="frame" x="18" y="3" width="50" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="Q8v-c5-SwM"/>
+                                <constraint firstAttribute="width" constant="46" id="lER-Ag-Sgl"/>
+                            </constraints>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Current" id="Rhm-Ma-7BQ">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField toolTip="Number of the trial currently the focus of display" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9DC-xT-9Bf" userLabel="Current Trial Number">
+                            <rect key="frame" x="79" y="0.0" width="37" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="37" id="ikq-zk-R5M"/>
+                                <constraint firstAttribute="height" constant="22" id="kq7-Ac-II9"/>
+                            </constraints>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" title="240" drawsBackground="YES" id="Kq7-uE-13Z">
+                                <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="3" id="Nlo-59-cVM">
+                                    <real key="minimum" value="0.0"/>
+                                    <real key="maximum" value="420"/>
+                                </numberFormatter>
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                            <connections>
+                                <action selector="currentTrialFieldAction:" target="-2" id="Fcp-3u-TOW"/>
+                            </connections>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="J5b-gG-jER" userLabel="-">
+                            <rect key="frame" x="113" y="3" width="15" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="11" id="NVs-gW-8PP"/>
+                                <constraint firstAttribute="height" constant="17" id="sKk-b8-Yxo"/>
+                            </constraints>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="-" id="SjI-z7-Wot">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField toolTip="Number of the time step that is currently the focus of display within the current trial" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9UP-zx-U6p" userLabel="Current Step Number">
+                            <rect key="frame" x="124" y="0.0" width="20" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="qAY-fe-5hp"/>
+                                <constraint firstAttribute="width" constant="20" id="yuO-pY-Hri"/>
+                            </constraints>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" title="2" drawsBackground="YES" id="Uj8-dK-hoU">
+                                <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="1" id="tdn-uG-SZs">
+                                    <real key="minimum" value="0.0"/>
+                                    <real key="maximum" value="5"/>
+                                </numberFormatter>
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                            <connections>
+                                <action selector="currentStepFieldAction:" target="-2" id="e12-Dc-KKr"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="9UP-zx-U6p" firstAttribute="top" secondItem="vcA-Wb-uex" secondAttribute="top" id="00F-UT-dri"/>
+                        <constraint firstAttribute="height" constant="22" id="7gb-59-2vZ"/>
+                        <constraint firstItem="ElS-gz-u33" firstAttribute="top" secondItem="vcA-Wb-uex" secondAttribute="top" constant="2" id="JfR-IG-0y7"/>
+                        <constraint firstItem="9UP-zx-U6p" firstAttribute="leading" secondItem="vcA-Wb-uex" secondAttribute="leading" constant="124" id="Nuw-Yo-DLY"/>
+                        <constraint firstItem="9DC-xT-9Bf" firstAttribute="leading" secondItem="vcA-Wb-uex" secondAttribute="leading" constant="79" id="WV7-33-8Jb"/>
+                        <constraint firstItem="9DC-xT-9Bf" firstAttribute="top" secondItem="vcA-Wb-uex" secondAttribute="top" id="XGv-Tw-UAv"/>
+                        <constraint firstItem="ElS-gz-u33" firstAttribute="leading" secondItem="vcA-Wb-uex" secondAttribute="leading" constant="20" id="XWo-km-PFT"/>
+                        <constraint firstAttribute="width" constant="144" id="hoh-JV-q87"/>
+                        <constraint firstItem="J5b-gG-jER" firstAttribute="top" secondItem="vcA-Wb-uex" secondAttribute="top" constant="2" id="jwb-aR-ha2"/>
+                        <constraint firstItem="J5b-gG-jER" firstAttribute="leading" secondItem="vcA-Wb-uex" secondAttribute="leading" constant="115" id="sGC-Ld-Mhn"/>
+                    </constraints>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="7AU-5i-xW1" userLabel="End">
+                    <rect key="frame" x="420" y="33" width="125" height="22"/>
+                    <subviews>
+                        <button toolTip="Sets ending location for playback to the current location" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HUr-vU-ge7" userLabel="End Button">
+                            <rect key="frame" x="-6" y="-7" width="64" height="32"/>
+                            <buttonCell key="cell" type="push" title="End" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cOO-um-Tk7">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="endButtonAction:" target="-2" id="p4V-Mk-IiI"/>
+                            </connections>
+                        </button>
+                        <textField toolTip="Playback stops in this trial" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Rn-he-fGU" userLabel="To Trial Number">
+                            <rect key="frame" x="60" y="0.0" width="37" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="37" id="DOm-Mg-iJ5"/>
+                                <constraint firstAttribute="height" constant="22" id="gbc-xe-Fk0"/>
+                            </constraints>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" title="420" drawsBackground="YES" id="Mzp-QO-nkP">
+                                <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="3" id="emE-7x-H1L">
+                                    <real key="minimum" value="0.0"/>
+                                    <real key="maximum" value="420"/>
+                                </numberFormatter>
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                            <connections>
+                                <action selector="endTrialFieldAction:" target="-2" id="zl9-Hv-CIF"/>
+                            </connections>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IgB-KF-ZzN" userLabel="-">
+                            <rect key="frame" x="94" y="3" width="15" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="9fS-11-0Dx"/>
+                                <constraint firstAttribute="width" constant="11" id="CwX-IE-gis"/>
+                            </constraints>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="-" id="rby-eG-oqe">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField toolTip="Playback stops in this time step within the ending trial" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ihf-aV-5P4" userLabel="To Step Number">
+                            <rect key="frame" x="105" y="0.0" width="20" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="1p6-bn-6uk"/>
+                                <constraint firstAttribute="width" constant="20" id="2Aq-so-xVS"/>
+                            </constraints>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" title="5" drawsBackground="YES" id="8rE-0Z-2lk">
+                                <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="1" id="rPQ-su-lBh">
+                                    <real key="minimum" value="0.0"/>
+                                    <real key="maximum" value="5"/>
+                                </numberFormatter>
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                            <connections>
+                                <action selector="endStepFieldAction:" target="-2" id="ijR-CN-p58"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="125" id="08k-OV-HvU"/>
+                        <constraint firstItem="HUr-vU-ge7" firstAttribute="top" secondItem="7AU-5i-xW1" secondAttribute="top" constant="1" id="6ay-Op-GBd"/>
+                        <constraint firstAttribute="height" constant="22" id="P4L-GH-GOn"/>
+                        <constraint firstItem="HUr-vU-ge7" firstAttribute="leading" secondItem="7AU-5i-xW1" secondAttribute="leading" id="Y4H-fa-G8p"/>
+                        <constraint firstItem="Ihf-aV-5P4" firstAttribute="leading" secondItem="7AU-5i-xW1" secondAttribute="leading" constant="105" id="YGL-oZ-BxO"/>
+                        <constraint firstItem="Ihf-aV-5P4" firstAttribute="top" secondItem="7AU-5i-xW1" secondAttribute="top" id="e6G-4Q-Tce"/>
+                        <constraint firstItem="3Rn-he-fGU" firstAttribute="top" secondItem="7AU-5i-xW1" secondAttribute="top" id="o6w-hk-k6n"/>
+                        <constraint firstItem="IgB-KF-ZzN" firstAttribute="leading" secondItem="7AU-5i-xW1" secondAttribute="leading" constant="96" id="oNw-qI-jgr"/>
+                        <constraint firstItem="IgB-KF-ZzN" firstAttribute="top" secondItem="7AU-5i-xW1" secondAttribute="top" constant="2" id="oTI-9f-Cjv"/>
+                        <constraint firstItem="3Rn-he-fGU" firstAttribute="leading" secondItem="7AU-5i-xW1" secondAttribute="leading" constant="60" id="wkk-QK-qfo"/>
+                    </constraints>
+                </customView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="O0o-tU-LoK">
+                    <rect key="frame" x="-6" y="-4" width="75" height="32"/>
+                    <string key="toolTip">Stop playback, reset playback range to the full session, set the current location to the beginning of the session, zoom full-out</string>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="63" id="Yak-tB-RLi"/>
+                        <constraint firstAttribute="height" constant="21" id="gq2-bp-oAg"/>
+                    </constraints>
+                    <buttonCell key="cell" type="push" title="Reset" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9KB-nX-3dY">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="resetButtonAction:" target="-2" id="86W-dh-HUO"/>
+                    </connections>
+                </button>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="nUU-ML-duK" userLabel="Play Controls">
+                    <rect key="frame" x="240" y="2" width="77" height="22"/>
+                    <subviews>
+                        <button toolTip="Start/pause playback" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="G0h-bq-M1u" userLabel="Start Play Button">
+                            <rect key="frame" x="-6" y="-7" width="48" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="36" id="AXv-87-FrE"/>
+                                <constraint firstAttribute="height" constant="21" id="PN1-uN-KB4"/>
+                            </constraints>
+                            <buttonCell key="cell" type="push" bezelStyle="rounded" image="start_play_filled" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="9Br-dW-MpE">
+                                <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="playPauseAction:" target="-2" id="i4X-Pd-XCF"/>
+                            </connections>
+                        </button>
+                        <button toolTip="Enable/disable wrap around of playback" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="u0R-gZ-7Do" userLabel="Repeat Button">
+                            <rect key="frame" x="35" y="-7" width="48" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="36" id="YfA-5E-x2a"/>
+                                <constraint firstAttribute="height" constant="21" id="d2P-dy-SsO"/>
+                            </constraints>
+                            <buttonCell key="cell" type="push" bezelStyle="rounded" image="repeat_filled" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="gms-pq-HtL">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="u0R-gZ-7Do" firstAttribute="top" secondItem="nUU-ML-duK" secondAttribute="top" constant="1" id="HZk-fQ-qCJ"/>
+                        <constraint firstItem="u0R-gZ-7Do" firstAttribute="leading" secondItem="nUU-ML-duK" secondAttribute="leading" constant="41" id="KoT-au-gV7"/>
+                        <constraint firstAttribute="width" constant="77" id="MzE-SD-avG"/>
+                        <constraint firstItem="G0h-bq-M1u" firstAttribute="leading" secondItem="nUU-ML-duK" secondAttribute="leading" id="VRT-sG-Mig"/>
+                        <constraint firstItem="G0h-bq-M1u" firstAttribute="top" secondItem="nUU-ML-duK" secondAttribute="top" constant="1" id="Wum-wc-AtL"/>
+                        <constraint firstAttribute="height" constant="22" id="xFf-EI-nQb"/>
+                    </constraints>
+                </customView>
+                <button toolTip="Enable/disable automatically zooming the session graph to the playback range on playback start" translatesAutoresizingMaskIntoConstraints="NO" id="u9E-uF-fru">
+                    <rect key="frame" x="69" y="4" width="89" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="3F5-cZ-QFy"/>
+                        <constraint firstAttribute="width" constant="85" id="ZPM-xZ-d8T"/>
+                    </constraints>
+                    <buttonCell key="cell" type="check" title="Auto Zoom" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="GvT-h6-eCb">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="autoZoomAction:" target="-2" id="h7v-3L-ald"/>
+                    </connections>
+                </button>
+                <slider toolTip="Playback speed: minimum to the left, maximum to the right" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lA4-eQ-r42" userLabel="Speed Slider">
+                    <rect key="frame" x="418" y="-1" width="129" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="125" id="aqC-sj-GVq"/>
+                        <constraint firstAttribute="height" constant="23" id="luw-4y-Ohg"/>
+                    </constraints>
+                    <sliderCell key="cell" state="on" alignment="left" maxValue="4" doubleValue="2" tickMarkPosition="below" numberOfTickMarks="5" allowsTickMarkValuesOnly="YES" sliderType="linear" id="NJJ-B7-tBW"/>
+                    <connections>
+                        <action selector="speedSliderAction:" target="-2" id="zx8-sC-hSn"/>
+                    </connections>
+                </slider>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vcA-Wb-uex" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="31" id="2Ba-Yz-90n"/>
+                <constraint firstItem="dRa-gW-nC5" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="2" id="61h-cN-VMt"/>
+                <constraint firstItem="nUU-ML-duK" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="62" id="7AC-DD-MEl"/>
+                <constraint firstItem="u9E-uF-fru" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="66" id="B7M-Lf-JR9"/>
+                <constraint firstAttribute="trailing" secondItem="dRa-gW-nC5" secondAttribute="trailing" constant="4" id="JT9-JD-490"/>
+                <constraint firstItem="dRa-gW-nC5" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="2" id="L2E-qj-ufq"/>
+                <constraint firstItem="bng-iY-FSi" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="32" id="SDA-hq-2Jx"/>
+                <constraint firstAttribute="bottom" secondItem="O0o-tU-LoK" secondAttribute="bottom" constant="3" id="YXX-X3-Qdb"/>
+                <constraint firstItem="bng-iY-FSi" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="dzD-gW-7zo"/>
+                <constraint firstItem="7AU-5i-xW1" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="31" id="hZj-XL-qBd"/>
+                <constraint firstItem="O0o-tU-LoK" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="iq7-0W-u8s"/>
+                <constraint firstItem="lA4-eQ-r42" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="63" id="mGe-JY-6cb"/>
+                <constraint firstItem="u9E-uF-fru" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="71" id="ndD-6Y-6ph"/>
+                <constraint firstAttribute="trailing" secondItem="lA4-eQ-r42" secondAttribute="trailing" constant="5" id="ooi-te-IZZ"/>
+                <constraint firstItem="nUU-ML-duK" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" constant="3.5" id="usE-PK-Abs"/>
+                <constraint firstAttribute="trailing" secondItem="7AU-5i-xW1" secondAttribute="trailing" constant="5" id="xVC-H0-3la"/>
+                <constraint firstItem="vcA-Wb-uex" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="zNu-HX-Hca"/>
+            </constraints>
+            <point key="canvasLocation" x="509" y="589"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="repeat_filled" width="128" height="128"/>
+        <image name="start_play_filled" width="128" height="128"/>
+    </resources>
+</document>

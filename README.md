@@ -1,0 +1,22 @@
+# BGL2015-Visualizer
+https://basimulation.org/bgl2015-visualizer/
+# What
+The BGL2015 Visualizer application is a graphical interface for a biobehavioral selectionist neural network, specifically the one described in this article:
+
+* Burgos, José E., García-Leal, Óscar (2015). Autoshaped choice in artificial neural networks: Implications for behavioral economics and neuroeconomics. *Behavioural Processes*, **114**, 63-71. Retrieved from: https://www.ncbi.nlm.nih.gov/pubmed/25662745
+
+The neural network model comes from the field of behavior analysis, and is intended to faithfully follow the general principles of operation of the brain, and produce behaviors that adhere to the principles of behavior analysis.
+
+
+# Build
+
+## System Requirements
+
+* MacOS 11.0 or later
+* Xcode 8.0 or later
+
+## Steps
+1. Go to https://github.com/tedonaldsn/BGL2015-Visualizer
+2. Download the source. See the green "Clone or download" pull-down menu upper right of the file list.
+3. If you downloaded the zip file, double-click the zip file to expand it into a normal folder.
+4. Double-click the BASimulation.xcworkspace file. This opens all of the components of the project, rather than just individual subprojects.

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Code/core-plot-release_2.2/framework/CorePlot.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Code/BASimulationFoundation/BASimulationFoundation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:Code/BASelectionistNeuralNetwork/BASelectionistNeuralNetwork.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Code/BGL2015_OSX/BGL2015_OSX.xcodeproj">
+   </FileRef>
+</Workspace>
