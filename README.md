@@ -25,8 +25,10 @@ Note that you will be downloading the application from GitHub, not the Apple Sto
 2. Click the line that says "BGL2015 Visualizer.app.zip"
 3. In your downloads folder, double-click the zip file to expand it into a normal application.
 4. Double click the application.
-5. You will be asked if you are sure you want to open the application. Click open. **The first time you try to run it, nothing visible will happen** (unless you happen to have the Console open). 
-6. Open the MacOS System Preferences, click "Security & Privacy". You will need to approve running BGL2015 Visualizer there. When you do, it should run and show the main sessions window. **You will not have to fiddle with security on subsequent runs.**
+5. You will be asked if you are sure you want to open the application. Click open. ***The first time you try to run it, nothing visible will happen*** (unless you happen to have the Console open). 
+6. Open the MacOS System Preferences, click "Security & Privacy".
+7. You will see: "BGL2015 Visualizer" was blocked from opening because it is not from an identified developer. Click the "Open Anyway" button. 
+8. If and when there are new releases and you download them, you will have to go through this approval process again.
 
 
 
