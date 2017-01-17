@@ -45,8 +45,10 @@ The neural network model comes from the field of behavior analysis, and is inten
 1. In the BGL2015-Visualizer folder, double-click the BASimulation.xcworkspace file. This opens all of the components of the project, rather than just individual subprojects.
 2. Set the Xcode scheme to BGL2015_OSX
 3. On the left side of the Xcode window is the "Project Navigator". Click on the project named "BGL2015_OSX". To the right of the navigator you should now see "General" information about the BGL2015_OSX subproject.
-4. The first section is "Identity". The second section is "Signing". If not already checked, click the check box next to "Automatically manage signing".
-5. You will now see a pull-down menu for "Team". Pull it down and select "Add an Account ..." and add your Apple ID. If you do not have an Apple ID, click the button "Create Apple ID".
+4. Code signing for developer identification
+	1. If the Signing section says "no accounts", click button to add an account. If you do not already have an Apple ID you want to use, you can "Create Apple ID..."
+	2. OR: if there is a check item title "Automatically manage signing", make sure the box is checked, then use the pulldown menu to select or add an Apple ID.
+
 
 ## Build
 1. In the "Product" menu, under submenu "Build For", select "Testing". Or press Shift-Command-U. All subprojects should compile without errors or warnings.
