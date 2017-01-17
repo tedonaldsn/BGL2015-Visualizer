@@ -30,18 +30,27 @@ The neural network model comes from the field of behavior analysis, and is inten
 
 # Build & Run Debug Version
 
-## System Requirements
+## Requirements
 * MacOS 11.0 or later
 * Xcode 8.0 or later
 
-## Steps
+## Get the Source
+
 1. Go to https://github.com/tedonaldsn/BGL2015-Visualizer/releases
 2. Download the source. This example uses the .zip file.
 3. In your downloads folder, double-click the zip file to expand it into a normal folder.
-4. In the BGL2015-Visualizer folder, double-click the BASimulation.xcworkspace file. This opens all of the components of the project, rather than just individual subprojects.
-5. Set the Xcode scheme to BGL2015_OSX
-6. In the "Product" menu, under submenu "Build For", select "Testing". Or press Shift-Command-U. All subprojects should compile without errors or warnings.
-7. In the "Product" menu, select "Run". Or press Command-R. The main sessions window should appear.
+
+## Set Up
+
+1. In the BGL2015-Visualizer folder, double-click the BASimulation.xcworkspace file. This opens all of the components of the project, rather than just individual subprojects.
+2. Set the Xcode scheme to BGL2015_OSX
+3. On the left side of the Xcode window is the "Project Navigator". Click on the project named "BGL2015_OSX". To the right of the navigator you should now see "General" information about the BGL2015_OSX subproject.
+4. The first section is "Identity". The second section is "Signing". If not already checked, click the check box next to "Automatically manage signing".
+5. You will now see a pull-down menu for "Team". Pull it down and select "Add an Account ..." and add your Apple ID. If you do not have an Apple ID, click the button "Create Apple ID".
+
+## Build
+1. In the "Product" menu, under submenu "Build For", select "Testing". Or press Shift-Command-U. All subprojects should compile without errors or warnings.
+2. In the "Product" menu, select "Run". Or press Command-R. The main sessions window should appear.
 
 
 # Third Party Code

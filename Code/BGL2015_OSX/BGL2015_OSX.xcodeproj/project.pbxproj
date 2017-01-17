@@ -853,7 +853,6 @@
 					};
 					63F34A4D1CC3CAB700660F94 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = YB4NV62TU6;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
@@ -1230,7 +1229,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = YB4NV62TU6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BGL2015_OSX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.BASimulation.BGL2015-OSX";
@@ -1246,7 +1245,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = YB4NV62TU6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BGL2015_OSX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.BASimulation.BGL2015-OSX";
